@@ -1,0 +1,19 @@
+.ReelList { display: flex; flex-wrap: wrap; gap: 0px; justify-content: center; }
+.video-container { position: relative; width: 200px; height: 360px; }
+.reel-video { display: block; width: 90%; height: 350px; pointer-events: none; margin-left: 40px; }
+.play-btn { position: absolute; top: 50%; left: 62%; transform: translate(-30%, -30%); font-size: 1.5rem; color: white; background: rgba(0, 0, 0, 0.3); border: none; border-radius: 50%; padding: 10px 15px; cursor: pointer; z-index: 10; }
+.play-btn:hover { background: rgba(0, 0, 0, 0.5); }
+.prev-btn { display: none; }
+.next-btn { display: none; }
+.h1padbg { margin-bottom: 0px; }
+@media only screen and (max-width: 768px) {
+  .video-container { position: relative; width: 100%; height: 380px; display: flex; justify-content: center; align-items: center; }
+  .reel-video { width: 90%; height: 350px; margin-left: 0px; }
+  .play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5rem; color: white; background: rgba(0, 0, 0, 0.3); border: none; border-radius: 50%; padding: 10px 15px; cursor: pointer; z-index: 10; }
+  .play-btn:hover { background: rgba(0, 0, 0, 0.5); }
+  .prev-btn { display: block; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: white; background: rgba(0, 0, 0, 0.3); border: none; border-radius: 50%; padding: 0px 16px 1px; justify-content: center; align-items: center; cursor: pointer; z-index: 10; }
+  .next-btn { display: block; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: white; background: rgba(0, 0, 0, 0.3); border: none; border-radius: 50%; padding: 0px 16px 1px; cursor: pointer; z-index: 10; }
+}
+.hidden { display: none; }
+.toggle-button { margin-top: 10px; padding: 8px 12px; background-color: rgb(0, 123, 255); color: rgb(255, 255, 255); border: none; border-radius: 4px; cursor: pointer; font-size: 14px; }
+.toggle-button:focus { outline: none; }

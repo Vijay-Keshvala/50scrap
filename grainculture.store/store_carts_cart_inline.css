@@ -1,0 +1,5 @@
+.shoppingcart .cart-icon span, .searchbar .theme-btn, .btn-primary, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .list-group-item.active, .dropdown-item:active { background-color: rgb(2, 65, 38) !important; border-color: rgb(2, 65, 38) !important; color: rgb(255, 255, 255) !important; }
+.btn-outline, .btn-outline-primary, .btn-bordered { border-color: rgb(2, 65, 38) !important; color: rgb(2, 65, 38) !important; }
+@media (max-width: 767px) {
+  footer { padding-bottom: 50px; }
+}

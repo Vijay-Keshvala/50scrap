@@ -1,0 +1,11 @@
+.whmtopcatrs { opacity: 0; }
+.typed-cursor { opacity: 1; }
+.typed-cursor.typed-cursor--blink { animation: 0.7s ease 0s infinite normal none running typedjsBlink; }
+@keyframes typedjsBlink { 
+  50% { opacity: 0; }
+}
+@-webkit-keyframes typedjsBlink { 
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

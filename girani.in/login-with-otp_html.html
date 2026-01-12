@@ -1,0 +1,374 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password – Reset Access | Girani</title>
+    <meta name="description" content="Need to recover your Girani account? Enter your phone number, verify with OTP, and reset your password in just a few steps.">
+
+    <link rel="stylesheet" href="assets/girani_0142.css">
+    <link rel="stylesheet" href="assets/bootstrap_min_7879.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/all_min_8109.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- <style>
+       @media screen and (max-width: 699px) {
+        {
+            padding-right:  60!important;
+            /* padding-left: 40!important;   */
+             }
+        }
+        @media screen and (min-width: 700px) {
+        .amj {
+        font-size: xx-large;
+        padding-right:  0px;
+            }
+        }
+</style> -->
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin:0;
+    }
+    @media (max-width: 400px) {
+        .imageclass {
+            height: 100% !important;;
+        }
+        .logoclass{
+            margin-left: 102px !important;
+            margin-top:10px !important;
+        }
+        
+    }
+    *:focus {
+        outline: none;
+    }
+    @media (max-width: 768px){
+        .imageclass{
+            height:47% !important;
+        }
+        
+    }
+    </style>
+
+<link rel="stylesheet" href="login-with-otp_html_inline.css"></head>
+
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-md-7" style="background-color: #593825;height: 90%;padding: 20px;">
+            <img src="assets/Login_20page_20banner_0246.png" alt="" class="imageclass" style="width: 55vw; min-width: 330px;height: 100vh;border-radius: 20px;padding-right: 10px;">
+        </div>
+        <div class="col-md-5" style="background-color: #EFE6DD;">
+            <img class="mt-5 mb-4 offset-5 logoclass" src="assets/Group_2030386_0692.png" width="125px" height="75px" alt="" style="margin-left: 126px"> <br>
+            <div class="offset-1">
+                <!-- <br>  -->
+                <!-- login view -->
+                <div id="login">
+                    <div action="" class="ml-4" id="gty" style="margin-bottom:310px;">
+                        <label for="" style="color: #593825;">Phone Number</label> <br>
+                        <input class="mb-4" type="number" id="phone" placeholder="phone number" style="background-color: #EFE6DD;font-size: small; width: 250px;border-top: none;border-left: none;border-right: none;">
+                        <br>
+                        <button class="py-2 px-5" id="otpsend" onclick="forgotpass()" style="background-color: #425D27;color: white;border-radius: 5px;border: none;cursor:pointer;">Send OTP
+                        </button>
+                        <br>
+                        <div id="error" style="color:red;"></div>
+                        
+                        <div id="abc" style="display:none">
+                            <p style="color:#593825;">Verify With OTP</p> <br>
+                            <div class="d-flex" style="margin-top:-30px">
+                                <input class="inputs m-2 text-center form-control rounded" style="background-color:transparent;" type="text" id="first" maxlength="1">
+                                <input class="inputs m-2 text-center form-control rounded" style="background-color:transparent;" type="text" id="second" maxlength="1">
+                                <input class="inputs m-2 text-center form-control rounded" style="background-color:transparent;" type="text" id="third" maxlength="1">
+                                <input class="inputs m-2 text-center form-control rounded" style="background-color:transparent;" type="text" id="fourth" maxlength="1">
+                            </div>
+                            <button class="py-2 px-5" onclick="verifyOtp()" style="background-color: #425D27;color: white;border-radius: 5px;border: none;margin-bottom:25px;cursor:pointer;">Verify OTP</button>
+                            <a onclick="resendOtp()" style="cursor:pointer">Resend OTP </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="visibility: hidden;">
+            make you masalas
+        </h1>
+         <p style="visibility: hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt,
+      fugit saepe harum eveniet voluptatibus alias velit voluptatem cupiditate,
+      aperiam, quasi nemo architecto! Ad eveniet fugit, nihil explicabo sapiente
+      harum? Nihil, eos, adipisci iste atque sunt provident quasi ad quisquam
+      maiores odit perspiciatis! Omnis perferendis ab voluptatibus facere qui,
+      soluta ad laudantium reiciendis iste recusandae adipisci eius repellat
+      optio neque autem explicabo aut sed corrupti vel vero! Veritatis ut
+      ducimus voluptatem deleniti amet suscipit officiis eveniet voluptatum,
+      harum nisi ratione ullam iusto blanditiis optio dicta maiores doloribus
+      doloremque unde perferendis nobis similique! Expedita fugit numquam nam
+      vero quibusdam, voluptatum assumenda labore! Id eveniet laborum vitae
+      voluptate eaque aspernatur odit animi quos quod. Quas necessitatibus ut
+      vel in quaerat corporis porro fuga nulla impedit pariatur? Recusandae
+      deserunt tempora omnis debitis. Eligendi, ducimus culpa. Velit vitae
+      provident, mollitia sunt fugit minima ipsa rerum eligendi dolor culpa
+      debitis quae asperiores sit veritatis. Ab sapiente ipsam deserunt, rerum
+      aliquid minus porro veritatis quasi unde expedita. Molestias porro sunt
+      laboriosam tenetur, dolorem, ipsum quam neque facere consectetur facilis
+      rerum corporis doloribus dolores quod. Tempora sunt, autem repellat sint
+      laboriosam reprehenderit inventore, deserunt consequuntur enim nostrum
+      velit delectus aliquid accusantium quaerat! Suscipit nemo consequuntur
+      modi autem?
+    </p>
+
+
+<script src="./js/utils.js"></script>
+<script src="./js/axios.js"></script>
+<script>
+    $(".inputs").keyup(function () {
+    if (this.value.length == this.maxLength) {
+      $(this).next('.inputs').focus();
+    }
+});
+</script>
+<script>
+
+   
+
+    var apiurl = API_LINK;
+    var otpval = ''
+    const apiurlval = apiurl
+    const imageurl = IMAGE_LINK;
+    function forgotpass() {
+      var x = document.getElementById("otpsend"); 
+        var y = document.getElementById("abc"); 
+     
+        if (x.style.display === "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";    
+            y.style.display = "block";
+         
+        }
+        
+        var phone = document.getElementById("phone").value
+        if (phone == null || phone == "" || phone == undefined || phone == " ") {
+            document.getElementById("error").innerHTML = "Please enter your phone number"
+        }
+        else {
+            document.getElementById("error").innerHTML = ""
+
+            var val = Math.floor(1000 + Math.random() * 9000);
+            otpval = val;
+            let formData = new FormData();
+            formData.append("phone", phone);
+            formData.append("otp", otpval);
+            const url = apiurl + "user/login_with_otp";
+            axios.post(url, formData)
+                .then(res => {
+                    var results = res.data;
+                   if (res.data == 1) {
+
+                        document.getElementById("error").innerHTML = "4 digit OTP sent as a text message"
+                    }
+                    else if(res.data == "Number not registered!"){
+                        document.getElementById("error").innerHTML = res.data
+                    }
+                    else {
+                        document.getElementById("error").innerHTML = "Somethimg Went Wrong"
+
+                    }
+                })
+        }
+
+    }
+    
+    function verifyOtp() {
+
+        document.getElementById("error").innerHTML = ""
+
+        var phone = document.getElementById("phone").value
+
+        var digit1 = document.getElementById("first").value;
+        var digit2 = document.getElementById("second").value;
+        var digit3 = document.getElementById("third").value;
+        var digit4 = document.getElementById("fourth").value;
+
+        var otpval_check = digit1 + '' + digit2 + '' + digit3 + '' + digit4
+        console.log(otpval_check)
+        console.log(otpval)
+        // send otp to login
+        if (phone == null || phone == "" || phone == undefined || phone == " ") {
+            document.getElementById("error").innerHTML = "Please enter your phone number"
+        }
+        else if(digit1 == null || digit1 == "" || digit1 == undefined || digit1 == " "){
+            document.getElementById("error").innerHTML = "Please enter the correct OTP!"
+        }
+        else if(digit2 == null || digit2 == "" || digit2 == undefined || digit2 == " "){
+            document.getElementById("error").innerHTML = "Please enter the correct OTP!"
+        }
+        else if(digit3 == null || digit3 == "" || digit3 == undefined || digit3 == " "){
+            document.getElementById("error").innerHTML = "Please enter the correct OTP!"
+        }
+        else if(digit4 == null || digit4 == "" || digit4 == undefined || digit4 == " "){
+            document.getElementById("error").innerHTML = "Please enter the correct OTP!"
+        }
+        else{
+            if (otpval == otpval_check) {
+                localStorage.setItem("phonenumber",phone)   
+                let formData = new FormData();
+                formData.append("phone", phone);
+                const url = apiurl + "user/loginviaotp";
+                axios.post(url, formData)
+                    .then(res => {
+                        var results = res.data;
+                        console.log(results)
+                        if (results.result == 1) {
+                            localStorage.setItem("user_id", results.datavalues[0].id)
+                            
+                            var a = JSON.parse(localStorage.getItem('session'));
+                            var ccc = localStorage.getItem('sessionthree');
+                            var cc = JSON.parse(localStorage.getItem('sessiontwo'))
+                            if(a != null){
+                                var tempStatic = [];
+                                for (var i = 0; i < a.length; i++) {
+                                    tempStatic.push(a[i].id)
+                                }
+                                let formdatanew = new FormData();
+                                formdatanew.append("user_id", localStorage.getItem("user_id"))
+                                formdatanew.append("tempStatic", tempStatic)
+                                const url15 = apiurl + "user/changeCartData";
+                                axios.post(url15, formdatanew)
+                                .then(res => {
+                                    
+                                })    
+                            }
+
+                            if(ccc != null){
+                                let formdatanewone1 = new FormData();
+                                formdatanewone1.append("user_id", localStorage.getItem("user_id"))
+                                formdatanewone1.append("ccc",JSON.parse(ccc))
+                                const url18 = apiurl + "user/changeCustomizedCart";
+                                axios.post(url18, formdatanewone1)
+                                    .then(res => {
+                                    // alert(JSON.stringify(res))
+                                    console.log(res, 'lll')
+                                    })
+                            }
+
+                            if(cc != null){
+                            var tempStaticone = [];
+                            for (var i = 0; i < cc.length; i++) {
+                                tempStaticone.push(cc[i].masalaid)
+                            }
+                            let formdatanewone = new FormData();
+                            formdatanewone.append("user_id", localStorage.getItem("user_id"))
+                            formdatanewone.append("tempStaticone", cc)
+                            const url18 = apiurl + "user/chengeMasalaCart";
+                            axios.post(url18, formdatanewone)
+                                .then(res => {
+                                
+                                })
+
+                            }
+                            // location.reload();
+
+                            window.location = ("index.php")
+                        }
+                        else {
+                            document.getElementById("error").innerHTML = results.message
+                        }
+
+                    })
+                
+                
+                // window.location=('./index.php')
+            }
+            else{
+                document.getElementById("error").innerHTML = "Please enter the correct OTP"   
+            }
+        }
+
+        // if (otpval == otpval_check) {
+        //     localStorage.setItem("phonenumber",phone)
+        //     window.location=("./Setnew_password.html")
+        // }
+        // else {
+        //     document.getElementById("error").innerHTML = "Please enter the correct OTP"
+
+        // }
+    }
+    
+
+
+    function resendOtp(){
+        var phone = document.getElementById("phone").value
+        if (phone == null || phone == "" || phone == undefined || phone == " ") {
+            document.getElementById("error").innerHTML = "Please enter your phone number"
+        }
+        else {
+            document.getElementById("error").innerHTML = ""
+
+            var val = Math.floor(1000 + Math.random() * 9000);
+            otpval = val;
+            let formData = new FormData();
+            formData.append("phone", phone);
+            formData.append("otp", otpval);
+            const url = apiurl + "user/login_with_otp";
+            axios.post(url, formData)
+                .then(res => {
+                    var results = res.data;
+                   if (res.data == 1) {
+
+                        document.getElementById("error").innerHTML = "Otp sent"
+                    }
+                    else if(res.data == "Number not registered!"){
+                        document.getElementById("error").innerHTML = res.data
+                    }
+                    else {
+                        document.getElementById("error").innerHTML = "Somethimg Went Wrong"
+
+                    }
+                })
+        }
+
+    }
+
+    function login() {
+        var x = document.getElementById("login");
+        var y = document.getElementById("create");
+        if (y.style.display === "none") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "none";
+            x.style.display = "block";
+        }
+    }
+
+    function createAcc() {
+        var x = document.getElementById("login");
+        var y = document.getElementById("create");
+        if (x.style.display === "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }
+
+
+    function checkOtp() {
+        var a = document.getElementById("otp");
+        var b = document.getElementById("otp1");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+            b.style.display = "block";
+        }
+    }
+
+
+
+</script>
+
+</body></html>

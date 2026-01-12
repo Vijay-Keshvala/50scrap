@@ -1,0 +1,1136 @@
+/******* Applying Your POPcoin Discount Animation Starting  **********/
+
+.pop_club_cart.pop-disc-apply label#buy-with-pop-coins-label,
+.cart_page_popcoin.pop-disc-apply label#buy-with-pop-coins-label,
+.pop_club_cart.pop-disc-apply input#buy-with-pop-coins,
+.cart_page_popcoin.pop-disc-apply input#buy-with-pop-coins,
+.pdp_popcoin.pop-disc-apply input#buy-with-pop-coins,
+.pdp_popcoin.pop-disc-apply label#buy-with-pop-coins-label {
+  display: none !important;
+}
+
+.pop_club_cart:not(.pop-disc-apply) .pop-disc,
+.cart_page_popcoin:not(.pop-disc-apply) .pop-disc,
+.pdp_popcoin:not(.pop-disc-apply) .pop-disc {
+  display: none !important;
+}
+
+.pop-disc-apply .pop-disc-loader {
+  display: flex !important;
+}
+
+.pop-disc {
+  display: flex !important;
+  align-items: center;
+  gap: 3px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+body.pop-empty-cart .pop_cart_drawer_container,
+body.pop-empty-cart .pop_cart_page_container {
+  display: none !important;
+}
+
+body.pop__rideadventure .pop-disc-loader {
+  border: 1px solid #fff;
+}
+
+.pop-disc-loader {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border: solid 1.5px #000;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+
+.pop-disc span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+/******* Applying Your POPcoin Discount Animation Ending *********/
+
+html,
+body {
+  padding-bottom: 0 !important;
+}
+
+.price.price--on-sale .price__sale .price-item.price-item--regular+.pop-club-listing {
+  display: none !important;
+}
+
+/* Cart Drawer Loader */
+.pop_club_cart.loader-pop {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: auto 18px;
+  background-position: left;
+}
+
+.pdp_popcoin.loader-pop {
+  position: relative;
+  min-height: 1rem;
+}
+
+.pdp_popcoin.loader-pop label#buy-with-pop-coins-label,
+.pdp_popcoin.loader-pop input#buy-with-pop-coins,
+body.ecom-filter-opened button#pop-club-quick-buy3,
+body.popcoinShow #smile-ui-container {
+  display: none !important;
+}
+
+.cart_page_popcoin.min-cart-value:not(.not-logged-in) label#buy-with-pop-coins-label,
+.pop_club_cart.min-cart-value:not(.not-logged-in) label#buy-with-pop-coins-label {
+  font-size: 12.5px;
+}
+
+.pdp_popcoin.loader-pop::before {
+  position: absolute;
+  content: "Loading...";
+  color: #000000;
+  left: 0;
+  top: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.cart_page_popcoin.zero-user label#buy-with-pop-coins-label {
+  margin-left: 0;
+  font-size: 11px;
+}
+
+.pop_club_cart.zero-user label#buy-with-pop-coins-label {
+  margin-left: 0;
+  font-size: 11px !important;
+}
+
+.pop_club_cart.loader-pop input#buy-with-pop-coins {
+  display: none !important;
+}
+
+.pop_club_cart.loader-pop label#buy-with-pop-coins-label {
+  opacity: 0;
+}
+
+/* .pop_club_cart.loader-pop::before {
+  position: absolute;
+  content: "Calculating Your Cart Total";
+  left: 25px;
+  top: 50%;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  transform: translateY(-50%);
+  text-align: left;
+} */
+
+/* Cart Page Loader */
+
+.cart_page_popcoin.loader-pop {
+  position: relative;
+  /* background-image: url(https://cdn.shopify.com/s/files/1/0530/0145/3717/files/23f3.png);
+  background-repeat: no-repeat;
+  background-size: auto 18px;
+  background-position: right; */
+}
+
+.cart_page_popcoin.loader-pop input#buy-with-pop-coins {
+  display: none !important;
+}
+
+.cart_page_popcoin.loader-pop label#buy-with-pop-coins-label {
+  opacity: 0;
+}
+
+.pop_club_cart.not-logged-in #buy-with-pop-coins-label {
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.pop_club_cart.not-logged-in #buy-with-pop-coins-label .underline {
+  font-weight: bold;
+  color: #000000;
+  text-decoration-line: underline !important;
+}
+
+.cart_page_popcoin.not-logged-in #buy-with-pop-coins-label {
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.cart_page_popcoin.not-logged-in #buy-with-pop-coins-label .underline {
+  font-weight: bold;
+  text-decoration-line: underline !important;
+}
+
+.pdp_popcoin {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pdp_popcoin.not-logged-in label#buy-with-pop-coins-label {
+  margin-left: 0;
+}
+
+.hidden-pop {
+  display: none !important;
+}
+
+body.popcoinShow .pop-star {
+  z-index: 9000000000 !important;
+}
+
+body.popcoinShow #slidecarthq .slidecarthq.open,
+body.popcoinShow .slidecarthq-overlay.open {
+  z-index: 99 !important;
+}
+
+body.popcoinShow #POPStar .popclub-modal {
+  z-index: 9000000000 !important;
+  overflow: hidden !important;
+}
+
+.pop-star {
+  position: fixed;
+  bottom: 6em;
+  right: 0px;
+  text-decoration: none;
+  color: #999;
+  background-color: #eee;
+  font-size: 16px;
+  padding: 0.3em;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /* z-index: 9000000000; */
+  z-index: 99;
+}
+
+.pop-star i {
+  vertical-align: middle;
+}
+
+.pop-star span {
+  padding-left: 0.5em;
+}
+
+.pop-star i+span {
+  padding-left: 0;
+}
+
+.pop-star:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.pop-star1 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: #b5b2b2;
+  padding: 0px;
+}
+
+button#pop-club-quick-buy3 {
+  background: var(--btmClr);
+  padding: 9px 10px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 0 !important;
+  border: none !important;
+  height: 36px;
+  min-height: unset;
+}
+
+.pop-star #pop-club-quick-buy3 span {
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 20px;
+  color: var(--fontClr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0;
+  text-transform: initial;
+  font-family: "Anton", sans-serif;
+}
+
+.pop-star #pop-club-quick-buy3 span img {
+  margin-right: 4px;
+  max-width: 29px;
+}
+
+.pop-star #pop-club-quick-buy3 span img.arrow {
+  margin-right: 0;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+#POPStar {
+  padding: 0;
+  background-color: transparent;
+}
+
+.pop_modal_close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  margin: 0px -2px 0px 4px;
+  border-radius: 50px;
+}
+
+.popclub-modal {
+  z-index: 999 !important;
+}
+
+.popclub-modal-content {
+  width: 80% !important;
+  max-width: 400px;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.pop-club-listing p .pop-img img {
+  max-width: 18px;
+  max-height: 18px;
+}
+
+span#pop-club-quick-buy-span {
+  display: flex;
+  align-items: center;
+}
+
+.pop-star .popclub-modal {
+  height: 100vh;
+  padding: 30px 15px;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.pop-star .popclub-modal .popclub-modal-content {
+  height: 100%;
+  padding: 0 !important;
+  border-radius: 20px;
+  position: relative;
+}
+
+.pop-star .popclub-modal .popclub-modal-content iframe {
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  background-clip: border-box;
+}
+
+.pop-club-listing {
+  margin: 5px 0;
+  width: 100%;
+}
+
+[data-view="list"] .pop-club-listing p {
+  justify-content: end;
+}
+
+.pop-club-listing p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #333232;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productList:not(.column-1, .column-2, .column-3, .column-4) .pop-club-listing p {
+  justify-content: start;
+}
+
+.pop-club-listing p span.pop-img {
+  display: flex;
+  margin: 0 4px;
+  margin-right: 0;
+}
+
+.pop-club-listing p .info-popup-coin {
+  width: 14px;
+}
+
+.pop-club-product p {
+  font-style: normal;
+  display: flex;
+  align-items: center !important;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #636363;
+  margin: 0;
+  /* margin: 0 0 15px 0; */
+}
+
+.pop-club-product p span.pop-img {
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.pop-club-product p img.info-popup-coin {
+  margin-left: 8px;
+  height: 15px !important;
+  line-height: inherit;
+  width: 15px !important;
+  cursor: pointer !important;
+}
+
+.pop-star1 .popclub-modal {
+  display: none;
+  height: 100vh;
+  padding: 30px 15px;
+  overflow: hidden;
+  visibility: visible;
+  background-color: #000000;
+}
+
+.pop-star1 .popclub-modal .popclub-modal-content {
+  height: 100%;
+  padding: 0 !important;
+  border-radius: 20px;
+  position: relative;
+}
+
+.pop-star1 .popclub-modal .pop_modal_close {
+  border: none;
+  position: absolute;
+  right: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 1px solid #7c7878;
+  align-items: center;
+  justify-content: center;
+  line-height: 0px;
+  margin: 0;
+  top: 10px;
+  /* padding: 0 0 4px 0; */
+  z-index: 99;
+}
+
+.pop-star1 .popclub-modal .popclub-modal-content iframe {
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+}
+
+.pdp_popcoin label#buy-with-pop-coins-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cart_page_popcoin label#buy-with-pop-coins-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pop-star1 .pop-arrow {
+  height: 20px;
+  width: 20px;
+  margin-left: 8px;
+}
+
+/* new css start */
+.pop-star #pop-club-quick-buy3 span span.reward_name {
+  border-right: 2px solid var(--fontClr);
+  padding-right: 6px;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.popcoin_sec {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--fontClr);
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin: 0px 10px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-right: 0;
+}
+
+.popcoin_sec img {
+  width: 21px;
+  height: 21px;
+  margin-right: 3px !important;
+}
+
+.pop-club-listing p span.pop-img {
+  position: relative;
+}
+
+/* new css end */
+p#product-issuance-msg .pop-img {
+  display: flex;
+  align-items: center;
+  margin: 0 3px !important;
+  /* margin-right: 0; */
+}
+
+p#product-issuance-msg .pop-img img {
+  width: 22px;
+  /* margin: 0 4px; */
+  height: auto;
+}
+
+label#buy-with-pop-coins-label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold !important;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: left;
+  text-decoration-line: none;
+  color: #000000;
+  text-transform: initial;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  letter-spacing: 0;
+  margin-top: 0;
+  z-index: 1;
+}
+
+label#buy-with-pop-coins-label span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  font-size: 14px;
+  font-weight: bold !important;
+}
+
+.pop_cart_msg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.pop_cart_page_msg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pdp_popcoin #buy-with-pop-coins-label span {
+  font-size: 14px;
+}
+
+.pop-star1 .pop-arrow path {
+  fill: var(--fontClr);
+}
+
+.popcoin_sec1 {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--fontClr);
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin: 0px 10px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+#pop-club-quick-buy3 .popcoin_sec1 {
+  position: relative;
+  margin-right: 24px;
+}
+
+#pop-club-quick-buy3 .popcoin_sec1::after {
+  position: absolute;
+  content: "";
+  right: -15px;
+  height: 100%;
+  width: 2px;
+  background-color: var(--fontClr);
+}
+
+#POPStar .product-form__submit::after {
+  display: none;
+}
+
+#cart .manual_class_cart__price_down,
+#cart .manual_class_cart__price_down #product-issuance-msg {
+  width: 100%;
+}
+
+.boost-sd__modal .manual_class_cart__price_down #product-issuance-msg {
+  color: #000000;
+}
+
+.manual_class_cart__price_down #product-issuance-msg {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  margin: 0;
+}
+
+body.popcoinShow {
+  overflow: hidden !important;
+}
+
+body.popcoinShow .bik-widget__outer-wrapper {
+  display: none !important;
+}
+
+.popcoin_msg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pop_club_cart,
+.pop_cart_drawer_container,
+.cart_earn-update {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 5px;
+  color: #000000;
+}
+
+.pop_cart_drawer_container,
+.pop_cart_page_container {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* .pop-star.pop-not-fixed,
+.pop-star.pop-not-fixed .pop-star1 {
+  position: initial;
+} */
+
+.cart_earn-update {
+  font-size: 14px;
+}
+
+.cart_earn-update img {
+  max-width: 25px;
+}
+
+.pop_cart_drawer_container {
+  flex-direction: column;
+  max-width: fit-content;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.pop_club_cart #buy-with-pop-coins-label {
+  padding-left: 0;
+}
+
+.pop_club_cart #buy-with-pop-coins-label::before {
+  display: none;
+}
+
+.pop_club_cart #buy-with-pop-coins-label::after {
+  display: none;
+}
+
+.pdp_popcoin #buy-with-pop-coins-label:before {
+  display: none;
+}
+
+.pdp_popcoin #buy-with-pop-coins-label:after {
+  display: none;
+}
+
+.cart_page_popcoin #buy-with-pop-coins-label::before {
+  display: none;
+}
+
+.cart_page_popcoin #buy-with-pop-coins-label::after {
+  display: none;
+}
+
+.pdp_popcoin #buy-with-pop-coins-label {
+  padding: 0;
+}
+
+.pop_pdp_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pop_club_cart #buy-with-pop-coins-label {
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  /* text-decoration-line: underline; */
+  color: #000000;
+}
+
+.cart_page_popcoin {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: fit-content;
+}
+
+.cart_page_popcoin #buy-with-pop-coins-label {
+  padding: 0;
+}
+
+.atc_popclub {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pop-club-hide {
+  display: none !important;
+}
+
+.pop_club_cart.not-logged-in.popclub-hide {
+  display: none !important;
+}
+
+.pop_cart_page_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  padding: 5px;
+}
+
+
+/* Floater CSS Starting */
+button#pop-club-quick-buy3:disabled,
+button#pop-club-quick-buy3:hover {
+  opacity: 1 !important;
+}
+
+quick-add-modal .discount-show_container {
+  display: none !important;
+}
+
+body.popIsLoading .pop_club_cart,
+body.popIsLoading .cart_page_popcoin,
+body.boost-sd__g-no-scroll button#pop-club-quick-buy3,
+body.modal-quickview--open button#pop-club-quick-buy3 {
+  display: none !important;
+}
+
+#POPStar .popclub-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+#POPStar .popclub-modal-content {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  overflow: hidden;
+}
+
+/* The Close Button */
+#POPStar .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#POPStar .close:hover,
+#POPStar .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+input#buy-with-pop-coins {
+  min-width: 17px !important;
+  min-height: 17px !important;
+  /* top: 3px; */
+  margin-right: 3px;
+  appearance: checkbox !important;
+  position: relative !important;
+  padding-right: 0 !important;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+  max-width: fit-content;
+}
+
+body.overflow-hidden button#pop-club-quick-buy3,
+body.open_search_mobile button#pop-club-quick-buy3,
+body.popcoinShow .smart-bot-container,
+body.open-cc button#pop-club-quick-buy3,
+body.quick_shop_popup_mobile button#pop-club-quick-buy3,
+body.overflow-hidden-mobile button#pop-club-quick-buy3,
+body.mini-cart--open button#pop-club-quick-buy3,
+body.mobile-menu-open button#pop-club-quick-buy3,
+body.popcoinShow [data-id="zsalesiq"],
+html.nav-open button#pop-club-quick-buy3,
+html.no-scroll button#pop-club-quick-buy3,
+html.lock button#pop-club-quick-buy3,
+html.lock-scroll button#pop-club-quick-buy3,
+html.modal-open button#pop-club-quick-buy3,
+html.hside_opened button#pop-club-quick-buy3,
+html.js-drawer-open button#pop-club-quick-buy3,
+html.prevent-scroll button#pop-club-quick-buy3,
+body.is--opend-drawer button#pop-club-quick-buy3,
+body.quick-view-opened button#pop-club-quick-buy3,
+body.overflow--hidden button#pop-club-quick-buy3,
+body.body--hidden button#pop-club-quick-buy3,
+body.predictive-overflow-hidden button#pop-club-quick-buy3,
+body.cart-sidebar-show button#pop-club-quick-buy3,
+body.slideout-right--open button#pop-club-quick-buy3,
+body.slideout-left--open button#pop-club-quick-buy3,
+body.nav-open button#pop-club-quick-buy3,
+body.addsearch button#pop-club-quick-buy3,
+body.yv_side_Drawer_open button#pop-club-quick-buy3,
+body.open-filter-sort button#pop-club-quick-buy3,
+body.sidebar-opened button#pop-club-quick-buy3,
+html.lock-all button#pop-club-quick-buy3,
+html.cart-open button#pop-club-quick-buy3,
+html.mobile-nav-open button#pop-club-quick-buy3,
+.pop-star1.BYOB button#pop-club-quick-buy3,
+body.overflow-hidden-desktop button#pop-club-quick-buy3,
+body.pop__myfrido.showOverly.searchact button#pop-club-quick-buy3,
+html.jsDrawerOpen button#pop-club-quick-buy3,
+body.popbtm-hidden button#pop-club-quick-buy3,
+body.open-mobile-sidebar button#pop-club-quick-buy3,
+body.toolbar-modal-open button#pop-club-quick-buy3,
+html.scroll-locked button#pop-club-quick-buy3 {
+  display: none !important;
+}
+
+body.overflow-hidden-tablet button#pop-club-quick-buy3,
+body.pop__rossettecoffee-com .pop_club_cart:not(.not-logged-in) {
+  display: none !important;
+}
+
+body.pop__utpaladesigns .pop_cart_page_msg {
+  color: #000000;
+}
+
+body.pop__utpaladesigns .pop-club-product p {
+  justify-content: start;
+}
+
+body.popcoinShow header-wrapper {
+  z-index: 999 !important;
+}
+
+.pop__coin-rewards:not([href]) {
+  cursor: pointer;
+}
+
+.min-cart-value_msg {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 375px) {
+  .pop_club_cart.not-logged-in #buy-with-pop-coins-label {
+    font-size: 11px !important;
+  }
+
+  .pop_cart_page_msg, .pop_cart_msg {
+    align-items: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .pop-desktop-hide {
+    display: none !important;
+  }
+
+  #popAtcWrapper {
+    display: none !important;
+  }
+
+  .card-bottom .pop-club-listing {
+    order: 3;
+  }
+}
+
+/* media css start */
+@media (max-width: 767px) {
+
+  .pdp_popcoin.not-logged-in label#buy-with-pop-coins-label {
+    font-size: 12px;
+  }
+
+  body.pop__utpaladesigns .pop-star1 {
+    bottom: 6rem;
+  }
+
+  .pop_cart_page_container {
+    justify-content: center;
+  }
+
+  body footer .footer__content-bottom {
+    padding-bottom: 4rem !important;
+  }
+
+  /* .pop-star .pop-star1 {
+    bottom: 6rem;
+  } */
+
+  /* .cart_page_popcoin label#buy-with-pop-coins-label {
+    font-size: 12px;
+  } */
+
+  button#pop-club-quick-buy3 {
+    padding: 7.5px 5px;
+    min-height: auto;
+  }
+
+  .pop-star #pop-club-quick-buy3 span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .pop-star #pop-club-quick-buy3 span img {
+    height: 24px !important;
+    width: auto;
+    margin-right: 4px;
+  }
+
+  .pop-star #pop-club-quick-buy3 span img.arrow {
+    margin-left: 4px;
+    width: 10px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .pop-star {
+    bottom: 40px;
+  }
+
+  #pop-club-quick-buy2 #pop-club-quick-buy-span img {
+    max-width: 154px;
+    height: auto;
+  }
+
+  .pop-star .popclub-modal {
+    transform: none;
+  }
+
+  .pop-star #pop-club-quick-buy3 span span.reward_name {
+    display: none;
+  }
+
+  .pop-star .popclub-modal .popclub-modal-content,
+  .pop-star1 .popclub-modal .popclub-modal-content {
+    width: 100% !important;
+  }
+
+  .pop-club-listing p {
+    font-size: 10px;
+    /* justify-content: center; */
+  }
+
+  .WhatsAppButton__root {
+    bottom: 8rem !important;
+  }
+
+  .popcoin_sec {
+    border: 1px solid var(--fontClr);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 2px 5px;
+    margin: 0px 5px;
+  }
+
+  .popcoin_sec img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  .pop-star1 .pop-arrow {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+  }
+
+  .pop-mobile-hide {
+    display: none !important;
+  }
+
+  .cart_page_popcoin {
+    justify-content: center;
+  }
+
+  .pop-star1 .popclub-modal .popclub-modal-content iframe {
+    height: 90%;
+  }
+
+  #POPStar .popclub-modal-content {
+    top: 10%;
+  }
+
+  /* .cart_page_popcoin.loader-pop:before {
+    left: 15%;
+  } */
+
+  /* .cart_page_popcoin.loader-pop {
+    background-position: 77%;
+  } */
+
+  .pop-disc span {
+    font-size: 13px;
+  }
+
+  .pdp_popcoin label#buy-with-pop-coins-label {
+    font-size: 13px;
+  }
+
+  .pdp_popcoin.not-logged-in #buy-with-pop-coins-label span {
+    display: initial;
+    font-size: 13px;
+  }
+
+  .pop-club-product p {
+    font-size: 13px;
+  }
+
+  .cart_page_popcoin.loader-pop::before {
+    font-size: 12px;
+  }
+
+  .pop_club_cart:not(.not-logged-in) label#buy-with-pop-coins-label {
+    font-size: 13px;
+  }
+
+  .cart_page_popcoin.min-cart-value:not(.not-logged-in) label#buy-with-pop-coins-label,
+  .pop_club_cart.min-cart-value:not(.not-logged-in) label#buy-with-pop-coins-label {
+    font-size: 11.5px !important;
+  }
+
+  /* .pop-club-product p {
+    justify-content: center;
+  } */
+
+  /* .cart_page_popcoin {
+    justify-content: center !important;
+  } */
+
+  .pdp_popcoin.loader-pop::before {
+    font-size: 12px;
+  }
+
+  /* 
+  body.sticky-menu .pop-star .pop-star1 {
+    bottom: 7.5rem;
+  } */
+
+
+  .pop_pdp_container {
+    max-width: 100% !important;
+  }
+
+  /* label#buy-with-pop-coins-label span {
+    font-size: 11px;
+  } */
+
+
+}
+
+/* Floater CSS Ending */

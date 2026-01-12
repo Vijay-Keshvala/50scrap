@@ -1,0 +1,735 @@
+img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px; }
+.lazyload, .lazyloading { max-width: 100%; }
+img.wp-smiley, img.emoji { display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0px 0.07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0px !important; }
+.wp-block-button__link { color: rgb(255, 255, 255); background-color: rgb(50, 55, 60); border-radius: 9999px; box-shadow: none; text-decoration: none; padding: calc(0.667em + 2px) calc(1.333em + 2px); font-size: 1.125em; }
+.wp-block-file__button { background: rgb(50, 55, 60); color: rgb(255, 255, 255); text-decoration: none; }
+:root { --wp--preset--aspect-ratio--square: 1; --wp--preset--aspect-ratio--4-3: 4/3; --wp--preset--aspect-ratio--3-4: 3/4; --wp--preset--aspect-ratio--3-2: 3/2; --wp--preset--aspect-ratio--2-3: 2/3; --wp--preset--aspect-ratio--16-9: 16/9; --wp--preset--aspect-ratio--9-16: 9/16; --wp--preset--color--black: #000000; --wp--preset--color--cyan-bluish-gray: #abb8c3; --wp--preset--color--white: #ffffff; --wp--preset--color--pale-pink: #f78da7; --wp--preset--color--vivid-red: #cf2e2e; --wp--preset--color--luminous-vivid-orange: #ff6900; --wp--preset--color--luminous-vivid-amber: #fcb900; --wp--preset--color--light-green-cyan: #7bdcb5; --wp--preset--color--vivid-green-cyan: #00d084; --wp--preset--color--pale-cyan-blue: #8ed1fc; --wp--preset--color--vivid-cyan-blue: #0693e3; --wp--preset--color--vivid-purple: #9b51e0; --wp--preset--color--color-1: #919191; --wp--preset--color--color-2: #4f4f4f; --wp--preset--color--color-3: #adaaaa; --wp--preset--color--color-4: #342828; --wp--preset--color--color-5: #ffffff; --wp--preset--color--color-6: #f9f9fa; --wp--preset--color--color-7: #d6d6d6; --wp--preset--color--color-8: #fe2f41; --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%); --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%); --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%); --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%); --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%); --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%); --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%); --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%); --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%); --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%); --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); --wp--preset--font-size--small: 13px; --wp--preset--font-size--medium: 20px; --wp--preset--font-size--large: 36px; --wp--preset--font-size--x-large: 42px; --wp--preset--spacing--20: 0.44rem; --wp--preset--spacing--30: 0.67rem; --wp--preset--spacing--40: 1rem; --wp--preset--spacing--50: 1.5rem; --wp--preset--spacing--60: 2.25rem; --wp--preset--spacing--70: 3.38rem; --wp--preset--spacing--80: 5.06rem; --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2); --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4); --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2); --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1); --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1); }
+:where(.is-layout-flex) { gap: 0.5em; }
+:where(.is-layout-grid) { gap: 0.5em; }
+body .is-layout-flex { display: flex; }
+.is-layout-flex { flex-wrap: wrap; align-items: center; }
+.is-layout-flex > :is(*, div) { margin: 0px; }
+body .is-layout-grid { display: grid; }
+.is-layout-grid > :is(*, div) { margin: 0px; }
+:where(.wp-block-columns.is-layout-flex) { gap: 2em; }
+:where(.wp-block-columns.is-layout-grid) { gap: 2em; }
+:where(.wp-block-post-template.is-layout-flex) { gap: 1.25em; }
+:where(.wp-block-post-template.is-layout-grid) { gap: 1.25em; }
+.has-black-color { color: var(--wp--preset--color--black) !important; }
+.has-cyan-bluish-gray-color { color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+.has-white-color { color: var(--wp--preset--color--white) !important; }
+.has-pale-pink-color { color: var(--wp--preset--color--pale-pink) !important; }
+.has-vivid-red-color { color: var(--wp--preset--color--vivid-red) !important; }
+.has-luminous-vivid-orange-color { color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+.has-luminous-vivid-amber-color { color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+.has-light-green-cyan-color { color: var(--wp--preset--color--light-green-cyan) !important; }
+.has-vivid-green-cyan-color { color: var(--wp--preset--color--vivid-green-cyan) !important; }
+.has-pale-cyan-blue-color { color: var(--wp--preset--color--pale-cyan-blue) !important; }
+.has-vivid-cyan-blue-color { color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+.has-vivid-purple-color { color: var(--wp--preset--color--vivid-purple) !important; }
+.has-black-background-color { background-color: var(--wp--preset--color--black) !important; }
+.has-cyan-bluish-gray-background-color { background-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+.has-white-background-color { background-color: var(--wp--preset--color--white) !important; }
+.has-pale-pink-background-color { background-color: var(--wp--preset--color--pale-pink) !important; }
+.has-vivid-red-background-color { background-color: var(--wp--preset--color--vivid-red) !important; }
+.has-luminous-vivid-orange-background-color { background-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+.has-luminous-vivid-amber-background-color { background-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+.has-light-green-cyan-background-color { background-color: var(--wp--preset--color--light-green-cyan) !important; }
+.has-vivid-green-cyan-background-color { background-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+.has-pale-cyan-blue-background-color { background-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+.has-vivid-cyan-blue-background-color { background-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+.has-vivid-purple-background-color { background-color: var(--wp--preset--color--vivid-purple) !important; }
+.has-black-border-color { border-color: var(--wp--preset--color--black) !important; }
+.has-cyan-bluish-gray-border-color { border-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+.has-white-border-color { border-color: var(--wp--preset--color--white) !important; }
+.has-pale-pink-border-color { border-color: var(--wp--preset--color--pale-pink) !important; }
+.has-vivid-red-border-color { border-color: var(--wp--preset--color--vivid-red) !important; }
+.has-luminous-vivid-orange-border-color { border-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+.has-luminous-vivid-amber-border-color { border-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+.has-light-green-cyan-border-color { border-color: var(--wp--preset--color--light-green-cyan) !important; }
+.has-vivid-green-cyan-border-color { border-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+.has-pale-cyan-blue-border-color { border-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+.has-vivid-cyan-blue-border-color { border-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+.has-vivid-purple-border-color { border-color: var(--wp--preset--color--vivid-purple) !important; }
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background { background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important; }
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background { background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important; }
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important; }
+.has-luminous-vivid-orange-to-vivid-red-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important; }
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background { background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important; }
+.has-cool-to-warm-spectrum-gradient-background { background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important; }
+.has-blush-light-purple-gradient-background { background: var(--wp--preset--gradient--blush-light-purple) !important; }
+.has-blush-bordeaux-gradient-background { background: var(--wp--preset--gradient--blush-bordeaux) !important; }
+.has-luminous-dusk-gradient-background { background: var(--wp--preset--gradient--luminous-dusk) !important; }
+.has-pale-ocean-gradient-background { background: var(--wp--preset--gradient--pale-ocean) !important; }
+.has-electric-grass-gradient-background { background: var(--wp--preset--gradient--electric-grass) !important; }
+.has-midnight-gradient-background { background: var(--wp--preset--gradient--midnight) !important; }
+.has-small-font-size { font-size: var(--wp--preset--font-size--small) !important; }
+.has-medium-font-size { font-size: var(--wp--preset--font-size--medium) !important; }
+.has-large-font-size { font-size: var(--wp--preset--font-size--large) !important; }
+.has-x-large-font-size { font-size: var(--wp--preset--font-size--x-large) !important; }
+:where(.wp-block-post-template.is-layout-flex) { gap: 1.25em; }
+:where(.wp-block-post-template.is-layout-grid) { gap: 1.25em; }
+:where(.wp-block-columns.is-layout-flex) { gap: 2em; }
+:where(.wp-block-columns.is-layout-grid) { gap: 2em; }
+:root :where(.wp-block-pullquote) { font-size: 1.5em; line-height: 1.6; }
+.woocommerce form .form-row .required { visibility: visible; }
+.header_mid .header_mid_inner .logo_wrap { width: 130px; }
+.header_mid_inner .logo img.logo_retina { width: 69.5px; }
+.headline_aligner { min-height: 180px; }
+.header_top { height: 40px; }
+ul.top_line_nav > li > a { line-height: 38px; }
+.header_mid { height: 135px; }
+.header_bot { height: 68px; }
+#page.cmsmasters_heading_after_header #middle, #page.cmsmasters_heading_under_header #middle .headline .headline_outer { padding-top: 135px; }
+#page.cmsmasters_heading_after_header.enable_header_top #middle, #page.cmsmasters_heading_under_header.enable_header_top #middle .headline .headline_outer { padding-top: 175px; }
+#page.cmsmasters_heading_after_header.enable_header_bottom #middle, #page.cmsmasters_heading_under_header.enable_header_bottom #middle .headline .headline_outer { padding-top: 203px; }
+#page.cmsmasters_heading_after_header.enable_header_top.enable_header_bottom #middle, #page.cmsmasters_heading_under_header.enable_header_top.enable_header_bottom #middle .headline .headline_outer { padding-top: 243px; }
+@media only screen and (max-width: 1024px) {
+  .header_top, .header_mid, .header_bot { height: auto; }
+  .header_mid .header_mid_inner > div, .header_mid .header_mid_inner .cmsmasters_header_cart_link { height: 135px; }
+  #page.cmsmasters_heading_after_header #middle, #page.cmsmasters_heading_under_header #middle .headline .headline_outer, #page.cmsmasters_heading_after_header.enable_header_top #middle, #page.cmsmasters_heading_under_header.enable_header_top #middle .headline .headline_outer, #page.cmsmasters_heading_after_header.enable_header_bottom #middle, #page.cmsmasters_heading_under_header.enable_header_bottom #middle .headline .headline_outer, #page.cmsmasters_heading_after_header.enable_header_top.enable_header_bottom #middle, #page.cmsmasters_heading_under_header.enable_header_top.enable_header_bottom #middle .headline .headline_outer { padding-top: 0px !important; }
+}
+@media only screen and (max-width: 768px) {
+  .header_mid .header_mid_inner > div, .header_bot .header_bot_inner > div, .header_mid .header_mid_inner .cmsmasters_header_cart_link { height: auto; }
+}
+@media only screen and (max-width: 1024px) {
+  .enable_header_centered .header_mid .header_mid_inner .cmsmasters_header_cart_link { height: auto; }
+}
+#cmsmasters_row_lir1gwc4j4 .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_lir1gwc4j4 .cmsmasters_row_outer_parent { padding-bottom: 0px; }
+#cmsmasters_row_lir1gwc4j4 .cmsmasters_row_inner.cmsmasters_row_fullwidth { padding-left: 0%; }
+#cmsmasters_row_lir1gwc4j4 .cmsmasters_row_inner.cmsmasters_row_fullwidth { padding-right: 0%; }
+#cmsmasters_row_i2qbgy5lvh .cmsmasters_row_outer_parent { padding-top: 50px; }
+#cmsmasters_row_i2qbgy5lvh .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_heading_pl3gwh7s29 { text-align: left; margin-top: 0px; margin-bottom: 25px; }
+#cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading, #cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading_divider { }
+@media (max-width: 1440px) {
+  #cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading, #cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+@media (max-width: 1024px) {
+  #cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading, #cmsmasters_heading_pl3gwh7s29 .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+#cmsmasters_row_aflw2ycecg .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_aflw2ycecg .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_row_ytnoab0qqv .cmsmasters_row_outer_parent { padding-top: 50px; }
+#cmsmasters_row_ytnoab0qqv .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_button_fr5tve6uip { text-align: center; }
+#cmsmasters_button_fr5tve6uip .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_fr5tve6uip .cmsmasters_button { font-family: Arimo; font-size: 15px; font-weight: bold; padding-right: 60px; padding-left: 60px; border-width: 1px; }
+#cmsmasters_button_fr5tve6uip .cmsmasters_button:hover { background-color: rgba(255, 255, 255, 0); }
+#cmsmasters_row_1n9qdvx2ln .cmsmasters_row_outer_parent { padding-top: 50px; }
+#cmsmasters_row_1n9qdvx2ln .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_heading_vphvfhw1w8 { text-align: left; margin-top: 0px; margin-bottom: 25px; }
+#cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading, #cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading_divider { }
+@media (max-width: 1440px) {
+  #cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading, #cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+@media (max-width: 1024px) {
+  #cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading, #cmsmasters_heading_vphvfhw1w8 .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+#cmsmasters_row_71zobxf7s9 { background-image: url(""); background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-size: auto; }
+#cmsmasters_row_71zobxf7s9 .cmsmasters_row_outer_parent { padding-top: 80px; }
+#cmsmasters_row_71zobxf7s9 .cmsmasters_row_outer_parent { padding-bottom: 80px; }
+#cmsmasters_column_g59m8ckj6k .cmsmasters_column_inner { padding: 30px 120px 0px 0px; }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_g59m8ckj6k .cmsmasters_column_inner { padding: 3%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_g59m8ckj6k .cmsmasters_column_inner { padding: 3% 12%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_g59m8ckj6k .cmsmasters_column_inner { padding: 3%; }
+}
+#cmsmasters_heading_xiwtih7a2 { text-align: left; margin-top: 0px; margin-bottom: 0px; }
+#cmsmasters_heading_xiwtih7a2 .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_xiwtih7a2 .cmsmasters_heading, #cmsmasters_heading_xiwtih7a2 .cmsmasters_heading a { font-family: "Open Sans"; font-size: 16px; line-height: 26px; font-weight: 400; color: rgb(109, 101, 101); }
+#cmsmasters_heading_xiwtih7a2 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_xiwtih7a2 .cmsmasters_heading_divider { }
+@media (max-width: 1024px) {
+  #cmsmasters_heading_xiwtih7a2 .cmsmasters_heading, #cmsmasters_heading_xiwtih7a2 .cmsmasters_heading a { font-size: 15px; line-height: 18px; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_heading_xiwtih7a2 { margin-bottom: 15px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_heading_xiwtih7a2 { margin-bottom: 15px; }
+}
+#cmsmasters_button_7dchlvm2pt { float: left; text-align: left; }
+#cmsmasters_button_7dchlvm2pt .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_7dchlvm2pt .cmsmasters_button { font-family: Arimo; font-size: 15px; font-weight: bold; padding-right: 60px; padding-left: 60px; }
+#cmsmasters_button_7dchlvm2pt .cmsmasters_button:hover { }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_7c3059bncf .cmsmasters_column_inner { padding: 0% 1%; }
+}
+#cmsmasters_row_9sx0f983wq .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_9sx0f983wq .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_9sx0f983wq .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_9sx0f983wq .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_iulkbzussd { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/uploads/2025/05/catering.png"); background-position: right center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 4% 6% 2%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 5% 6% 58%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 5% 10% 45%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 5% 10% 30%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 5% 10% 12%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_iulkbzussd .cmsmasters_column_inner { padding: 6% 5% 10% 8%; }
+}
+#cmsmasters_heading_r8lfvw13rt { text-align: left; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_r8lfvw13rt .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_r8lfvw13rt .cmsmasters_heading, #cmsmasters_heading_r8lfvw13rt .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_r8lfvw13rt .cmsmasters_heading a:hover { }
+#cmsmasters_heading_r8lfvw13rt .cmsmasters_heading_divider { }
+#cmsmasters_heading_8z5e4fkyf { text-align: left; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_8z5e4fkyf .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_8z5e4fkyf .cmsmasters_heading, #cmsmasters_heading_8z5e4fkyf .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 24px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_8z5e4fkyf .cmsmasters_heading a:hover { }
+#cmsmasters_heading_8z5e4fkyf .cmsmasters_heading_divider { }
+#cmsmasters_button_drdft2y2e8 { float: left; text-align: left; }
+#cmsmasters_button_drdft2y2e8 .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_drdft2y2e8 .cmsmasters_button { font-family: Arimo; font-size: 15px; font-weight: bold; padding-right: 35px; padding-left: 35px; border-width: 1px; background-color: rgb(255, 255, 255); color: rgb(206, 32, 35); border-color: rgb(255, 255, 255); }
+#cmsmasters_button_drdft2y2e8 .cmsmasters_button:hover { background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); }
+#cmsmasters_row_eeio2f7oeo .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_eeio2f7oeo .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_eeio2f7oeo .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_eeio2f7oeo .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_gnpdvytyu9 { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/03/BULK.jpg.webp"); background-position: left center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 6% 4% 6% 2%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 4% 5% 3% 65%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 6% 5% 10% 45%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 6% 5% 10% 30%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 6% 5% 10% 12%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_gnpdvytyu9 .cmsmasters_column_inner { padding: 6% 5% 10% 8%; }
+}
+#cmsmasters_heading_akujxuzinq { text-align: left; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_akujxuzinq .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_akujxuzinq .cmsmasters_heading, #cmsmasters_heading_akujxuzinq .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_akujxuzinq .cmsmasters_heading a:hover { }
+#cmsmasters_heading_akujxuzinq .cmsmasters_heading_divider { }
+#cmsmasters_heading_q2v4wcg3q { text-align: left; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_q2v4wcg3q .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_q2v4wcg3q .cmsmasters_heading, #cmsmasters_heading_q2v4wcg3q .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 24px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_q2v4wcg3q .cmsmasters_heading a:hover { }
+#cmsmasters_heading_q2v4wcg3q .cmsmasters_heading_divider { }
+#cmsmasters_button_c21o5yfydz { float: left; text-align: left; }
+#cmsmasters_button_c21o5yfydz .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_c21o5yfydz .cmsmasters_button { font-family: Arimo; font-size: 15px; font-weight: bold; padding-right: 35px; padding-left: 35px; border-width: 1px; background-color: rgb(255, 255, 255); color: rgb(206, 32, 35); border-color: rgb(255, 255, 255); }
+#cmsmasters_button_c21o5yfydz .cmsmasters_button:hover { background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); }
+#cmsmasters_row_77d82i2zac .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_77d82i2zac .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_77d82i2zac .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_77d82i2zac .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_5scg8dixg8 { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2023/07/Frenchise-new-scaled.jpg.webp"); background-position: right center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 4% 6% 2%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 5% 6% 53%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 5% 10% 45%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 5% 10% 30%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 5% 10% 12%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_5scg8dixg8 .cmsmasters_column_inner { padding: 6% 5% 10% 8%; }
+}
+#cmsmasters_heading_fx0akdp4cj { text-align: left; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_fx0akdp4cj .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_fx0akdp4cj .cmsmasters_heading, #cmsmasters_heading_fx0akdp4cj .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_fx0akdp4cj .cmsmasters_heading a:hover { }
+#cmsmasters_heading_fx0akdp4cj .cmsmasters_heading_divider { }
+#cmsmasters_heading_s5bkevjcx { text-align: left; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_s5bkevjcx .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_s5bkevjcx .cmsmasters_heading, #cmsmasters_heading_s5bkevjcx .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 24px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_s5bkevjcx .cmsmasters_heading a:hover { }
+#cmsmasters_heading_s5bkevjcx .cmsmasters_heading_divider { }
+#cmsmasters_button_gzob9hvh1e { float: left; text-align: left; }
+#cmsmasters_button_gzob9hvh1e .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_gzob9hvh1e .cmsmasters_button { font-family: Arimo; font-size: 15px; font-weight: bold; padding-right: 35px; padding-left: 35px; border-width: 1px; background-color: rgb(255, 255, 255); color: rgb(206, 32, 35); border-color: rgb(255, 255, 255); }
+#cmsmasters_button_gzob9hvh1e .cmsmasters_button:hover { background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); }
+#cmsmasters_row_2kenkwz6b .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_2kenkwz6b .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_2kenkwz6b .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_2kenkwz6b .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_swzdlm4ges { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2023/07/Home-1.jpg.webp"); background-position: right center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_swzdlm4ges .cmsmasters_column_inner { padding: 6%; }
+}
+#cmsmasters_heading_byw6krx9pc { text-align: center; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_byw6krx9pc .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_byw6krx9pc .cmsmasters_heading, #cmsmasters_heading_byw6krx9pc .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_byw6krx9pc .cmsmasters_heading a:hover { }
+#cmsmasters_heading_byw6krx9pc .cmsmasters_heading_divider { }
+#cmsmasters_heading_q7rbnp7249 { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_q7rbnp7249 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_q7rbnp7249 .cmsmasters_heading, #cmsmasters_heading_q7rbnp7249 .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 38px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_q7rbnp7249 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_q7rbnp7249 .cmsmasters_heading_divider { }
+#cmsmasters_row_8atbdsem9t .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_8atbdsem9t .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_8atbdsem9t .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_8atbdsem9t .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_22bxdmtolm { background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/03/1.-discover.png.webp"); background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-size: auto; }
+#cmsmasters_column_22bxdmtolm .cmsmasters_column_inner { padding: 0px 10px; }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_22bxdmtolm .cmsmasters_column_inner { padding: 2% 5% 5%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_22bxdmtolm .cmsmasters_column_inner { padding: 2% 5% 5%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_22bxdmtolm .cmsmasters_column_inner { padding: 4% 5% 5%; }
+}
+#cmsmasters_heading_89079zeiii { text-align: center; margin-top: 75px; margin-bottom: 68px; }
+#cmsmasters_heading_89079zeiii .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_89079zeiii .cmsmasters_heading, #cmsmasters_heading_89079zeiii .cmsmasters_heading a { font-family: Arimo; font-size: 40px; line-height: 40px; font-weight: bold; color: rgb(142, 14, 11); }
+#cmsmasters_heading_89079zeiii .cmsmasters_heading a:hover { }
+#cmsmasters_heading_89079zeiii .cmsmasters_heading_divider { }
+#cmsmasters_heading_1rifqmlflo { text-align: center; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_1rifqmlflo .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_1rifqmlflo .cmsmasters_heading, #cmsmasters_heading_1rifqmlflo .cmsmasters_heading a { font-family: Arimo; font-size: 20px; line-height: 28px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_1rifqmlflo .cmsmasters_heading a:hover { }
+#cmsmasters_heading_1rifqmlflo .cmsmasters_heading_divider { }
+#cmsmasters_heading_51f347ojli { text-align: center; margin-top: 0px; margin-bottom: 80px; }
+#cmsmasters_heading_51f347ojli .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_51f347ojli .cmsmasters_heading, #cmsmasters_heading_51f347ojli .cmsmasters_heading a { font-family: "Open Sans"; font-size: 16px; line-height: 26px; font-weight: 400; color: rgb(117, 81, 54); }
+#cmsmasters_heading_51f347ojli .cmsmasters_heading a:hover { }
+#cmsmasters_heading_51f347ojli .cmsmasters_heading_divider { }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_heading_51f347ojli { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_heading_51f347ojli { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_heading_51f347ojli { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_heading_51f347ojli { margin-bottom: 30px; }
+}
+#cmsmasters_column_e4w68k6ty2 { background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/03/2.-order.png.webp"); background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-size: auto; }
+#cmsmasters_column_e4w68k6ty2 .cmsmasters_column_inner { padding: 0px 10px; }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_e4w68k6ty2 .cmsmasters_column_inner { padding: 1% 4% 5% 8%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_e4w68k6ty2 .cmsmasters_column_inner { padding: 1% 4% 5% 8%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_e4w68k6ty2 .cmsmasters_column_inner { padding: 2% 4% 5% 8%; }
+}
+#cmsmasters_heading_w84ylmao2o { text-align: center; margin-top: 75px; margin-bottom: 68px; }
+#cmsmasters_heading_w84ylmao2o .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_w84ylmao2o .cmsmasters_heading, #cmsmasters_heading_w84ylmao2o .cmsmasters_heading a { font-family: Arimo; font-size: 40px; line-height: 40px; font-weight: bold; color: rgb(142, 14, 11); }
+#cmsmasters_heading_w84ylmao2o .cmsmasters_heading a:hover { }
+#cmsmasters_heading_w84ylmao2o .cmsmasters_heading_divider { }
+#cmsmasters_heading_hg2v14cxgh { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_hg2v14cxgh .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_hg2v14cxgh .cmsmasters_heading, #cmsmasters_heading_hg2v14cxgh .cmsmasters_heading a { font-family: Arimo; font-size: 20px; line-height: 28px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_hg2v14cxgh .cmsmasters_heading a:hover { }
+#cmsmasters_heading_hg2v14cxgh .cmsmasters_heading_divider { }
+#cmsmasters_heading_zczz3o3pnk { text-align: center; margin-top: 0px; margin-bottom: 80px; }
+#cmsmasters_heading_zczz3o3pnk .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_zczz3o3pnk .cmsmasters_heading, #cmsmasters_heading_zczz3o3pnk .cmsmasters_heading a { font-family: "Open Sans"; font-size: 16px; line-height: 26px; font-weight: 400; color: rgb(117, 81, 54); }
+#cmsmasters_heading_zczz3o3pnk .cmsmasters_heading a:hover { }
+#cmsmasters_heading_zczz3o3pnk .cmsmasters_heading_divider { }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_heading_zczz3o3pnk { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_heading_zczz3o3pnk { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_heading_zczz3o3pnk { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_heading_zczz3o3pnk { margin-bottom: 30px; }
+}
+#cmsmasters_column_5if46fw2 { background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/03/3.-get-your-delivery.png.webp"); background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-size: auto; }
+#cmsmasters_column_5if46fw2 .cmsmasters_column_inner { padding: 0px 10px; }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_5if46fw2 .cmsmasters_column_inner { padding: 2% 5% 5%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_5if46fw2 .cmsmasters_column_inner { padding: 2% 5% 5%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_5if46fw2 .cmsmasters_column_inner { padding: 5%; }
+}
+#cmsmasters_heading_gfboyp1b8 { text-align: center; margin-top: 75px; margin-bottom: 68px; }
+#cmsmasters_heading_gfboyp1b8 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_gfboyp1b8 .cmsmasters_heading, #cmsmasters_heading_gfboyp1b8 .cmsmasters_heading a { font-family: Arimo; font-size: 40px; line-height: 40px; font-weight: bold; color: rgb(142, 14, 11); }
+#cmsmasters_heading_gfboyp1b8 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_gfboyp1b8 .cmsmasters_heading_divider { }
+#cmsmasters_heading_7zzxwatwu4 { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_7zzxwatwu4 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_7zzxwatwu4 .cmsmasters_heading, #cmsmasters_heading_7zzxwatwu4 .cmsmasters_heading a { font-family: Arimo; font-size: 20px; line-height: 28px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_7zzxwatwu4 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_7zzxwatwu4 .cmsmasters_heading_divider { }
+#cmsmasters_heading_batmlcauyo { text-align: center; margin-top: 0px; margin-bottom: 80px; }
+#cmsmasters_heading_batmlcauyo .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_batmlcauyo .cmsmasters_heading, #cmsmasters_heading_batmlcauyo .cmsmasters_heading a { font-family: "Open Sans"; font-size: 16px; line-height: 26px; font-weight: 400; color: rgb(117, 81, 54); }
+#cmsmasters_heading_batmlcauyo .cmsmasters_heading a:hover { }
+#cmsmasters_heading_batmlcauyo .cmsmasters_heading_divider { }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_heading_batmlcauyo { margin-bottom: 70px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_heading_batmlcauyo { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_heading_batmlcauyo { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_heading_batmlcauyo { margin-bottom: 30px; }
+}
+#cmsmasters_column_8hftccvkqc { background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/03/4.-enjoy.png.webp"); background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-size: auto; }
+#cmsmasters_column_8hftccvkqc .cmsmasters_column_inner { padding: 0px 10px; }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_8hftccvkqc .cmsmasters_column_inner { padding: 1% 5% 5%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_8hftccvkqc .cmsmasters_column_inner { padding: 1% 5% 5%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_8hftccvkqc .cmsmasters_column_inner { padding: 2% 5% 5%; }
+}
+#cmsmasters_heading_jfhv4v723b { text-align: center; margin-top: 75px; margin-bottom: 68px; }
+#cmsmasters_heading_jfhv4v723b .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_jfhv4v723b .cmsmasters_heading, #cmsmasters_heading_jfhv4v723b .cmsmasters_heading a { font-family: Arimo; font-size: 40px; line-height: 40px; font-weight: bold; color: rgb(142, 14, 11); }
+#cmsmasters_heading_jfhv4v723b .cmsmasters_heading a:hover { }
+#cmsmasters_heading_jfhv4v723b .cmsmasters_heading_divider { }
+#cmsmasters_heading_29e7dee2z9 { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_29e7dee2z9 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_29e7dee2z9 .cmsmasters_heading, #cmsmasters_heading_29e7dee2z9 .cmsmasters_heading a { font-family: Arimo; font-size: 20px; line-height: 28px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_29e7dee2z9 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_29e7dee2z9 .cmsmasters_heading_divider { }
+#cmsmasters_heading_7gonhzj2sk { text-align: center; margin-top: 0px; margin-bottom: 80px; }
+#cmsmasters_heading_7gonhzj2sk .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_7gonhzj2sk .cmsmasters_heading, #cmsmasters_heading_7gonhzj2sk .cmsmasters_heading a { font-family: "Open Sans"; font-size: 16px; line-height: 26px; font-weight: 400; color: rgb(117, 81, 54); }
+#cmsmasters_heading_7gonhzj2sk .cmsmasters_heading a:hover { }
+#cmsmasters_heading_7gonhzj2sk .cmsmasters_heading_divider { }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_heading_7gonhzj2sk { margin-bottom: 70px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_heading_7gonhzj2sk { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_heading_7gonhzj2sk { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_heading_7gonhzj2sk { margin-bottom: 30px; }
+}
+#cmsmasters_column_pikg2xx9ws { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2023/07/Home-1.jpg.webp"); background-position: right center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_pikg2xx9ws .cmsmasters_column_inner { padding: 6%; }
+}
+#cmsmasters_heading_usmi41ayjg { text-align: center; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_usmi41ayjg .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_usmi41ayjg .cmsmasters_heading, #cmsmasters_heading_usmi41ayjg .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_usmi41ayjg .cmsmasters_heading a:hover { }
+#cmsmasters_heading_usmi41ayjg .cmsmasters_heading_divider { }
+#cmsmasters_heading_zycl026b2 { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_zycl026b2 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_zycl026b2 .cmsmasters_heading, #cmsmasters_heading_zycl026b2 .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 38px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_zycl026b2 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_zycl026b2 .cmsmasters_heading_divider { }
+#cmsmasters_row_ymt1bdomb .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_ymt1bdomb .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_ymt1bdomb .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_ymt1bdomb .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_10dw4awe5l { border-width: 1px; border-style: solid; border-color: rgb(117, 81, 54); border-radius: 15px; overflow: hidden; }
+#cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_10dw4awe5l .cmsmasters_column_inner { padding: 6%; }
+}
+#cmsmasters_heading_gf4fps3dr { text-align: center; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_gf4fps3dr .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_gf4fps3dr .cmsmasters_heading, #cmsmasters_heading_gf4fps3dr .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_gf4fps3dr .cmsmasters_heading a:hover { }
+#cmsmasters_heading_gf4fps3dr .cmsmasters_heading_divider { }
+#cmsmasters_heading_4x4tsptl3s { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_4x4tsptl3s .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_4x4tsptl3s .cmsmasters_heading, #cmsmasters_heading_4x4tsptl3s .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 38px; font-weight: 400; color: rgb(117, 81, 54); }
+#cmsmasters_heading_4x4tsptl3s .cmsmasters_heading a:hover { }
+#cmsmasters_heading_4x4tsptl3s .cmsmasters_heading_divider { }
+#cmsmasters_row_0uo3yqt4k .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_0uo3yqt4k .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_0uo3yqt4k .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_0uo3yqt4k .cmsmasters_row_outer_parent { padding-bottom: 20px; }
+}
+#cmsmasters_column_6xxyshlka3 { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2023/07/Home-1.jpg.webp"); background-position: right center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_6xxyshlka3 .cmsmasters_column_inner { padding: 6%; }
+}
+#cmsmasters_heading_gmx36msyw2 { text-align: center; margin-top: 0px; margin-bottom: 15px; }
+#cmsmasters_heading_gmx36msyw2 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_gmx36msyw2 .cmsmasters_heading, #cmsmasters_heading_gmx36msyw2 .cmsmasters_heading a { font-family: Arimo; font-size: 32px; line-height: 42px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_gmx36msyw2 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_gmx36msyw2 .cmsmasters_heading_divider { }
+#cmsmasters_heading_8i9fzc4f9 { text-align: center; margin-top: 0px; margin-bottom: 20px; }
+#cmsmasters_heading_8i9fzc4f9 .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_8i9fzc4f9 .cmsmasters_heading, #cmsmasters_heading_8i9fzc4f9 .cmsmasters_heading a { font-family: "Open Sans"; font-size: 18px; line-height: 38px; font-weight: 400; color: rgb(255, 255, 255); }
+#cmsmasters_heading_8i9fzc4f9 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_8i9fzc4f9 .cmsmasters_heading_divider { }
+#cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-bottom: 135px; }
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-bottom: 70px; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_nf1bg2kpb .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+}
+#cmsmasters_heading_sbq4sdama { text-align: left; margin-top: 0px; margin-bottom: 0px; }
+#cmsmasters_heading_sbq4sdama .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_sbq4sdama .cmsmasters_heading, #cmsmasters_heading_sbq4sdama .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_sbq4sdama .cmsmasters_heading a:hover { }
+#cmsmasters_heading_sbq4sdama .cmsmasters_heading_divider { }
+#cmsmasters_column_llu40apb9 { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/11/Gajar-Halwa.png.webp"); background-position: center center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 100% 5% 14% 11%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 100% 7% 10% 11%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 100% 7% 10%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 65% 7% 8%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 100% 7% 8%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_llu40apb9 .cmsmasters_column_inner { padding: 100% 7% 14%; }
+}
+#cmsmasters_heading_dt94llx51 { text-align: left; margin-top: 0px; margin-bottom: 10px; }
+#cmsmasters_heading_dt94llx51 .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_dt94llx51 .cmsmasters_heading, #cmsmasters_heading_dt94llx51 .cmsmasters_heading a { font-family: Arimo; font-size: 26px; line-height: 34px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_dt94llx51 .cmsmasters_heading a:hover { }
+#cmsmasters_heading_dt94llx51 .cmsmasters_heading_divider { }
+#cmsmasters_column_fzp3zvqf1w { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/11/Moong-Dal-Halwa.png.webp"); background-position: center center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 100% 7% 14%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 100% 7% 10% 11%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 100% 7% 10%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 65% 7% 8%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 100% 7% 8%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_fzp3zvqf1w .cmsmasters_column_inner { padding: 100% 7% 14%; }
+}
+#cmsmasters_heading_srxbce2rke { text-align: left; margin-top: 0px; margin-bottom: 10px; }
+#cmsmasters_heading_srxbce2rke .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_srxbce2rke .cmsmasters_heading, #cmsmasters_heading_srxbce2rke .cmsmasters_heading a { font-family: Arimo; font-size: 26px; line-height: 34px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_srxbce2rke .cmsmasters_heading a:hover { }
+#cmsmasters_heading_srxbce2rke .cmsmasters_heading_divider { }
+#cmsmasters_column_eq4f2kmtd7 { border-radius: 15px; overflow: hidden; background-image: url("https://www.vijaydairy.com/wp-content/webp-express/webp-images/uploads/2022/11/Gund-Laddu.png.webp"); background-position: center center; background-repeat: no-repeat; background-attachment: scroll; background-size: cover; }
+#cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 100% 7% 14%; }
+@media only screen and (min-width: 1440px) {
+  #cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 100% 7% 10% 11%; }
+}
+@media only screen and (max-width: 1024px) {
+  #cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 100% 7% 10%; }
+}
+@media only screen and (max-width: 768px) {
+  #cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 65% 7% 8%; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 100% 7% 8%; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_column_eq4f2kmtd7 .cmsmasters_column_inner { padding: 100% 7% 14%; }
+}
+#cmsmasters_heading_mh9r3zna5l { text-align: left; margin-top: 0px; margin-bottom: 10px; }
+#cmsmasters_heading_mh9r3zna5l .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_mh9r3zna5l .cmsmasters_heading, #cmsmasters_heading_mh9r3zna5l .cmsmasters_heading a { font-family: Arimo; font-size: 26px; line-height: 34px; font-weight: bold; color: rgb(255, 255, 255); }
+#cmsmasters_heading_mh9r3zna5l .cmsmasters_heading a:hover { }
+#cmsmasters_heading_mh9r3zna5l .cmsmasters_heading_divider { }
+#cmsmasters_row_7kg2yraiet .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_7kg2yraiet .cmsmasters_row_outer_parent { padding-bottom: 0px; }
+#cmsmasters_heading_t7vni3kc0q { text-align: left; margin-top: 0px; margin-bottom: 60px; }
+#cmsmasters_heading_t7vni3kc0q .cmsmasters_heading { text-align: left; }
+#cmsmasters_heading_t7vni3kc0q .cmsmasters_heading, #cmsmasters_heading_t7vni3kc0q .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_t7vni3kc0q .cmsmasters_heading a:hover { }
+#cmsmasters_heading_t7vni3kc0q .cmsmasters_heading_divider { }
+#cmsmasters_row_tzfvr4j0o .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_tzfvr4j0o .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_row_75q2ub5kx .cmsmasters_row_outer_parent { padding-top: 90px; }
+#cmsmasters_row_75q2ub5kx .cmsmasters_row_outer_parent { padding-bottom: 30px; }
+@media only screen and (max-width: 768px) {
+  #cmsmasters_row_75q2ub5kx .cmsmasters_row_outer_parent { padding-top: 40px; }
+}
+@media only screen and (max-width: 540px) {
+  #cmsmasters_row_75q2ub5kx .cmsmasters_row_outer_parent { padding-top: 40px; }
+}
+@media only screen and (max-width: 320px) {
+  #cmsmasters_row_75q2ub5kx .cmsmasters_row_outer_parent { padding-top: 40px; }
+}
+#cmsmasters_heading_wzbwl4vw1k { text-align: center; margin-top: 0px; margin-bottom: 0px; }
+#cmsmasters_heading_wzbwl4vw1k .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_wzbwl4vw1k .cmsmasters_heading, #cmsmasters_heading_wzbwl4vw1k .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_wzbwl4vw1k .cmsmasters_heading a:hover { }
+#cmsmasters_heading_wzbwl4vw1k .cmsmasters_heading_divider { }
+#cmsmasters_row_hf6gqfbtd { background-color: rgba(153, 153, 153, 0); }
+#cmsmasters_row_hf6gqfbtd .cmsmasters_row_outer_parent { padding-top: 50px; }
+#cmsmasters_row_hf6gqfbtd .cmsmasters_row_outer_parent { padding-bottom: 70px; }
+#cmsmasters_row_kho8n7jwqb .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_kho8n7jwqb .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_heading_zj1ivq0p7o { text-align: center; margin-top: 0px; margin-bottom: 25px; }
+#cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading { text-align: center; }
+#cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading, #cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading a { font-family: Arimo; font-size: 38px; line-height: 48px; font-weight: bold; color: rgb(117, 81, 54); }
+#cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading a:hover { }
+#cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading_divider { }
+@media (max-width: 1440px) {
+  #cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading, #cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+@media (max-width: 1024px) {
+  #cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading, #cmsmasters_heading_zj1ivq0p7o .cmsmasters_heading a { font-size: 31px; line-height: 33px; }
+}
+#cmsmasters_row_erguday2c .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_erguday2c .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_clients_vwltk3tvuh .cmsmasters_clients_item { height: 180px; line-height: 180px; }
+#cmsmasters_clients_vwltk3tvuh .cmsmasters_clients_item a { line-height: 180px; }
+#cmsmasters_row_f32ncnjytj .cmsmasters_row_outer_parent { padding-top: 0px; }
+#cmsmasters_row_f32ncnjytj .cmsmasters_row_outer_parent { padding-bottom: 50px; }
+#cmsmasters_button_hidttxgkpg { text-align: center; }
+#cmsmasters_button_hidttxgkpg .cmsmasters_button::before { margin-right: 0.5em; margin-left: 0px; vertical-align: baseline; }
+#cmsmasters_button_hidttxgkpg .cmsmasters_button { }
+#cmsmasters_button_hidttxgkpg .cmsmasters_button:hover { }
+ul.cnss-social-icon li.cn-fa-icon a { background-color: rgb(205, 31, 34) !important; }
+ul.cnss-social-icon li.cn-fa-icon a:hover { background-color: rgb(51, 51, 51) !important; color: rgb(255, 255, 255) !important; }
+.no-js img.lazyload { display: none; }
+figure.wp-block-image img.lazyloading { min-width: 150px; }
+.lazyload, .lazyloading { --smush-placeholder-width: 100px; --smush-placeholder-aspect-ratio: 1/1; width: var(--smush-image-width, var(--smush-placeholder-width)) !important; aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important; }
+.lazyload { opacity: 0; }
+.lazyloading { opacity: 1; min-width: 16px; border: 0px !important; background: url("https://www.vijaydairy.com/wp-content/plugins/wp-smushit/app/assets/images/smush-lazyloader-2.gif") center center / 16px no-repeat rgba(255, 255, 255, 0) !important; }
+th.label { display: none; }
+p { font-size: 17px; }
+.headline.cmsmasters_color_scheme_default { padding-top: 70px; }
+@media only screen and (max-width: 768px) {
+  .headline.cmsmasters_color_scheme_default { padding-top: 0px !important; }
+}
+.header_mid a:hover, .header_mid .button:hover { color: rgb(117, 81, 54) !important; }
+ul > li::before { display: none; }
+ul.psfw-social-icons li { padding: 0px; }
+.header_mid .cmsmasters_dynamic_cart .cmsmasters_dynamic_cart_button .count { background-color: rgb(205, 31, 34); }
+.cmsmasters_single_slider_title, .share_posts_title { font-family: Arimo, Arial, Helvetica, "Nimbus Sans L", sans-serif; font-size: 26px; line-height: 34px; font-weight: 700; font-style: normal; text-transform: none; text-decoration: none; }
+mark.count { display: none !important; }
+.ht-ctc .ctc_s_7:hover .ctc_s_7_icon_padding, .ht-ctc .ctc_s_7:hover .ctc_cta_stick { background-color: rgb(37, 211, 102) !important; }
+.ht-ctc .ctc_s_7:hover svg g path { fill: rgb(244, 244, 244) !important; }

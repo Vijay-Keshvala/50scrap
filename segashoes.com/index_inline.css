@@ -1,0 +1,8 @@
+.product-image { object-fit: cover; height: 190px; border-radius: 6px; width: 100% !important; }
+@media (max-width: 768px) {
+  .product-image { border-radius: 4px; height: 90px !important; }
+  a { display: block; margin-bottom: 10px; }
+}
+@media (max-width: 480px) {
+  .product-image { height: 120px; }
+}

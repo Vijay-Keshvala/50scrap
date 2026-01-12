@@ -1,0 +1,260 @@
+/* ===============================================
+    NutriCart Shopaccino Theme
+    ============================================== */
+    body { font-size: 14px;}
+
+    @media only screen and (min-width: 1140px) {
+      .container-fluid {
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+      }
+    }
+
+    h1, .h1 {font-size: 22px;}
+    h2, .h2 {font-size: 20px;}
+    h3, .h3 {font-size: 18px;}
+    h4, .h4 {font-size: 18px;}
+    
+/*  ===============================================
+    Global
+    =============================================== */
+    @media only screen and (min-width: 768px) {
+        .h-unsticky #header-option3, .header_home #header-option3:hover {
+            background-color: white !important;
+            background-image: none;
+            transition: all 0.2s ease;
+        }
+    }
+
+    /*
+    @keyframes fade {
+        0% { opacity: 0 }
+        20% { opacity: 1 }
+        80% { opacity: 1 }
+        100% { opacity: 0 }
+    }
+    .megamenu-list {
+        opacity:0;
+        animation: fade ease-in-out 3s;
+        animation-fill-mode: forwards;
+    }
+    .megamenu-list:nth-child(2) { animation-delay: 0.05s;}
+    .megamenu-list:nth-child(3) { animation-delay: 0.10s;}
+    .megamenu-list:nth-child(4) { animation-delay: 0.15s;}
+    .megamenu-list:nth-child(5) { animation-delay: 0.20s;}
+    */
+    @media (min-width: 992px) {
+        .storecategory > .row > * {
+            flex: 0 0 auto;
+            width: 10%;
+        }
+    }
+
+/*  ===============================================
+    Transitions
+    =============================================== */    
+   :root {
+        --duration-extra-long: 0.6s;
+        --ease-out-slow: cubic-bezier(0, 0, 0.3, 1);
+        --animation-slide-in: slideIn var(--duration-extra-long) var(--ease-out-slow) forwards;
+        --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);
+    }
+    @keyframes slideIn {
+        0% {
+            transform: translateY(1rem);
+            opacity: 0.01;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    
+    .teaser img,
+    .home-category figure img,
+    .zoom-bigimg img,
+    .text-cl-img-hold figure img,
+    .home-gallery-scroll figure img,
+    .category-banner figure img,
+    .mobile-slide .photo-gallery a img,
+    .subcategory figure img,
+    .home-slider a img
+    {
+        opacity: 0.01;
+        transform: translateY(2rem);
+    }
+    .teaser img.lazyloaded,
+    .home-category figure img.lazyloaded,
+    .zoom-bigimg  img.lazyloaded,
+    .zoom-thumb img,
+    .text-cl-img-hold figure img.lazyloaded,
+    .home-gallery-scroll figure img.lazyloaded,
+    .category-banner figure img.lazyloaded,
+    .mobile-slide .photo-gallery a img.lazyloaded,
+    .subcategory figure img.lazyloaded,
+    .home-slider a img.lazyloaded, 
+    .subcategory a,
+    .imagetext-overlay,
+    .product_detail,
+    .pf-dkstop-openpanel,
+    .review-rate-block,
+    .sharebtn-hold,
+    .home-category .category-caption
+    {
+        animation: var(--animation-slide-in);
+    }
+    
+    .teaser figure,
+    .home-category figure,
+    .text-cl-img-hold figure,
+    .home-gallery-scroll figure,
+    .home-gallery-scroll figure,
+    .category-banner figure
+    { overflow:hidden; }
+    
+    .teaser img.lazyloaded,
+    .home-category figure img.lazyloaded,
+    .text-cl-img-hold figure img.lazyloaded,
+    .home-gallery-scroll figure img.lazyloaded,
+    .category-banner figure img.lazyloaded,
+    .mobile-slide .photo-gallery a img.lazyloaded
+    {
+        transition: transform 1s ease !important;
+        animation: none;
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    /*---- image hover zoom -----*/
+    .teaser img.lazyloaded:hover,
+    .home-category figure img.lazyloaded:hover,
+    .text-cl-img-hold figure img.lazyloaded:hover,
+    .home-gallery-scroll figure img.lazyloaded:hover,
+    .category-banner figure img.lazyloaded:hover,
+    .mobile-slide .photo-gallery a img.lazyloaded:hover
+    {
+        transform: scale(1.05);
+    }
+    .home-category figure img.rounded-circle:hover {transform: scale(1);}
+/*  ===============================================
+    End Transitions Effects
+    =============================================== */
+
+/*  ===============================================
+    Theme CSS
+    =============================================== */
+    #header-option2 .toppanel-hold svg, #header-option8 .toppanel-hold svg {width: 22px; height: 22px;}
+    .toppanel-hold .shoppingcart .cart-icon span {min-width: 15px;padding: 2px}
+    #header-option2 .mobile-header .searchbar .search-input { padding-left:1em;}
+    #header-option2 .mobile-header .searchbar .search-input, .mobile-header .searchbar button {background-color:#f3f4f7; min-height:40px; border-radius:25px !important;}
+    @media only screen and (max-width: 767px) {
+        #header-option2 #searchbar {border:none;box-shadow: 0px 2px 2px rgba(0,0,0,0.03);}
+        #header-option2 .search-input{background:none;min-height: 36px;}
+        #header-option2 .srch-mobile-dropdown { background-color: #fff; border-radius: 25px;}
+        #header-option2 .form-search {position:relative; top:0;}
+        .search-container {padding: 0.8em 1em;min-height:30px; max-height: none;}
+        #header-option2 .searchbar { padding: 0;}
+    }
+
+    .home-featuted-category { padding-top: 1.5em !important; padding-bottom: 1.5em !important;border-bottom: solid 4px #eee;}
+    .home-logo-panel {margin-top: 0 !important; margin-bottom: 0 !important;}
+    
+    .homecategory-list-title,
+    .subcategory .categorycaption { 
+        font-size: 14px !important;    
+        display: inline-block;  
+        vertical-align: top;
+    }
+
+    /*------*/
+    .voice-search-icon {border-left:solid 1px #aaa; min-width: 46px;text-align: center;  margin-left: 0.7em;}
+
+    /*------*/
+    .home-rounded-category-panel .category-caption h3
+    {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .teaser .teaser-item-div {
+        background: #fff;
+        border: solid 1px #eee;
+        border-radius: 6px;
+    }
+    .teaser .teaser-item-div:hover {box-shadow: 0 2px 8px #80808033;}
+    .teaser .teaser-item-div .product-list-title,   .teaser .teaser-item-div .form-horizontal{
+        padding: 0px 8px;
+        padding-bottom: 0.6em;
+    }
+
+    .count-input .quantity {border: none;}
+    .related-panel { background-color: #ffffff;}
+    .related-panel .relatedscroll {padding-bottom:em;}
+    @media (min-width: 1350px) {
+     .rel-recenthold .container-fluid {
+       max-width: 1300px;
+     }
+   }
+
+   
+/* ---------------------------------
+    New Coupon Code strip 
+------------------------------------*/
+    .coupon-card {
+        /*background: linear-gradient(135deg, #7158fe, #9d4de6);*/
+        background-color: #dc143c;
+        color: #fff;
+        text-align: center;
+        padding: 0.6rem 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .coupon-card .pp-coupon-display {background-color: #ffffff;}
+    .coupon-card .pp-coupon-display .kanan .info::after, .coupon-card .pp-coupon-display .kanan .info::before {background-color: #dc143c;}
+    .countdown-couponcode .time-display-block {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        margin: 0 3px;
+        padding:3px 5px;
+        display: inline-block;
+        min-width: 35px;
+    }
+    .countdown-couponcode .time-display-block span.small {font-size:9px;}
+
+    @media only screen and (max-width: 767px) {
+        .coupon-card {padding: 0.6rem 1rem;}
+        .coupon-card .pp-coupon-display .kanan .info::before {top: -10px;}
+        .coupon-card .pp-coupon-display .kanan .info::after {bottom: -10px;}
+    }
+/*--- End New Coupon Code strip ---*/
+   
+
+/* ---------------------------------
+    New Daily Deals
+------------------------------------*/
+    .daily-deals-home { border: solid 2px #41891e; padding: 1.5em; border-radius: 8px;}
+    .daily-deals-home .hours1, .daily-deals-home .minutes1, .daily-deals-home .seconds1 {
+        width:40px; 
+        height: 40px;
+    }
+    .daily-deals-home #hours1, .daily-deals-home #minutes1, .daily-deals-home #seconds1 {
+        font-size:16px; 
+        font-weight: 600;        
+    }
+    @media only screen and (max-width: 767px) {
+        .daily-deals-home { 
+            padding:0.6em; 
+            border-radius: 4px;
+        }
+    }
+/*--- End New Daily Deals ---*/
+

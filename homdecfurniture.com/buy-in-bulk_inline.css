@@ -1,0 +1,15 @@
+html { background: rgb(241, 241, 241); }
+body { background: rgb(255, 255, 255); border: 1px solid rgb(204, 208, 212); color: rgb(68, 68, 68); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; margin: 2em auto; padding: 1em 2em; max-width: 700px; box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 1px; }
+h1 { border-bottom: 1px solid rgb(218, 218, 218); clear: both; color: rgb(102, 102, 102); font-size: 24px; margin: 30px 0px 0px; padding: 0px 0px 7px; }
+#error-page { margin-top: 50px; }
+#error-page p, #error-page .wp-die-message { font-size: 14px; line-height: 1.5; margin: 25px 0px 20px; }
+#error-page code { font-family: Consolas, Monaco, monospace; }
+ul li { margin-bottom: 10px; font-size: 14px; }
+a { color: rgb(34, 113, 177); }
+a:hover, a:active { color: rgb(19, 94, 150); }
+a:focus { color: rgb(4, 57, 89); box-shadow: rgb(34, 113, 177) 0px 0px 0px 2px; outline: transparent solid 2px; }
+.button { background: rgb(243, 245, 246); border: 1px solid rgb(1, 96, 135); color: rgb(1, 96, 135); display: inline-block; text-decoration: none; font-size: 13px; line-height: 2; height: 28px; margin: 0px; padding: 0px 10px 1px; cursor: pointer; appearance: none; border-radius: 3px; white-space: nowrap; box-sizing: border-box; vertical-align: top; }
+.button.button-large { line-height: 2.30769; min-height: 32px; padding: 0px 12px; }
+.button:hover, .button:focus { background: rgb(241, 241, 241); }
+.button:focus { background: rgb(243, 245, 246); border-color: rgb(0, 124, 186); box-shadow: rgb(0, 124, 186) 0px 0px 0px 1px; color: rgb(1, 96, 135); outline: transparent solid 2px; outline-offset: 0px; }
+.button:active { background: rgb(243, 245, 246); border-color: rgb(126, 137, 147); box-shadow: none; }

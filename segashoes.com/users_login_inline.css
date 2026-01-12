@@ -1,0 +1,6 @@
+.toolbox label { display: block !important; }
+.page-item.disabled { display: block; }
+.bag-drop::after { content: ""; border: 0px; margin: 0px; font-size: 15px; font-family: porto; width: auto; height: auto; }
+.user-drop::after { border: 0px; margin: 0px; font-size: 15px; font-family: porto; width: auto; height: auto; }
+.header-search { margin-right: 10px; }
+.header-icon { margin-right: 10px; }

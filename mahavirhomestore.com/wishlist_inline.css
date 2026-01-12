@@ -1,0 +1,36 @@
+.dropDown { max-height: 800px; }
+@media only screen and (max-width: 767px) {
+  #ls-email-signin-overlay-v1 .grecaptcha-badge { bottom: 34px !important; }
+  #ls-veriy-mobile-overlay-v1 .grecaptcha-badge { bottom: 32px !important; }
+}
+#mk02bhsq8pjg1768213990653 { outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto 0px 0px auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; display: none !important; z-index: 2000000000 !important; cursor: none !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; clip: auto !important; color-scheme: light !important; }
+#mk02bhsq8pjg1768213990653.widget-hidden { display: none !important; }
+#mk02bhsq8pjg1768213990653.widget-visible { display: block !important; }
+@media print {
+  #mk02bhsq8pjg1768213990653.widget-visible { display: none !important; }
+}
+.tawk-button-hover[data-v-2fc2d95d]:focus, .tawk-button-hover[data-v-2fc2d95d]:hover { background-color: rgba(255, 255, 255, 0.2) !important; border-radius: 5px !important; }
+@keyframes tawkMaxOpen { 
+  0% { opacity: 0; transform: translate(0px, 30px); }
+  100% { opacity: 1; transform: translate(0px, 0px); }
+}
+@-webkit-keyframes tawkMaxOpen { 
+  0% { opacity: 0; transform: translate(0px, 30px); }
+  100% { opacity: 1; transform: translate(0px, 0px); }
+}
+#k24jvdf85gq81768213990676.open { animation: 0.25s ease 0s 1 normal none running tawkMaxOpen !important; }
+@keyframes tawkMaxClose { 
+  0% { opacity: 1; transform: translate(0px, 0px); }
+  100% { opacity: 0; transform: translate(0px, 30px); }
+}
+@-webkit-keyframes tawkMaxClose { 
+  0% { opacity: 1; transform: translate(0px, 0px); }
+  100% { opacity: 0; transform: translate(0px, 30px); }
+}
+#k24jvdf85gq81768213990676.closed { animation: 0.25s ease 0s 1 normal none running tawkMaxClose !important; }
+.dropDown { max-height: 800px; }
+.floating_icon { position: fixed; right: 20px; z-index: 20000; width: 80px; height: 108px; transform: translateY(-50%); top: 50%; }
+.floating_icon img { max-width: 100%; max-height: 100%; }
+@media only screen and (max-width: 767px) {
+  .floating_icon { width: 40px; height: 54px; }
+}

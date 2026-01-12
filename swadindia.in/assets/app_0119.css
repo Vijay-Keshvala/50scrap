@@ -1,0 +1,10 @@
+.free_shipping_icon_app {
+    width: 175px;
+}
+.free_shipping_icon_app > img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+.free_shipping_icon_app_newDetailsPage {
+  margin-top: 30px !important;
+}

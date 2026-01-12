@@ -1,0 +1,71 @@
+.entry-content a, .entry-content a:hover {
+    box-shadow: none !important;
+}
+#wpfooter {
+    position: static;
+}
+.show-icon-table {
+    border-collapse: collapse;
+    margin-top: .5em;
+    width: 100%;
+    clear: both;
+}
+.cnss_common_display{
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+    margin: 2px;
+    color: #ffffff;   
+    text-align: center;
+    border: none;
+    line-height: 36px;
+    border-radius:50%;
+}
+.cnss_facebook_awesome{
+    background-color: #3b5998 !important;
+}
+.cnss_twitter_awesome{
+    background-color: #000000 !important;
+}
+.cnss_linkedin_awesome{
+    background-color: #0177b5 !important;
+}
+.cnss_whatsapp_awesome {
+    background-color: #25d366 !important;
+}
+.cnss_telegram_awesome {
+    background-color: #26a4e3 !important;
+}
+.cnss_reddit_awesome {
+    background-color: #ff4500 !important;
+}
+.cnss_copy_link_awesome {
+    background-color: #30d19b !important;
+}
+.cnss_envelope_awesome {
+    background-color: #7d7d7d !important;
+}
+.cnss_print_awesome {
+    background-color: #333333 !important;
+}
+.cnss_social_share_icon {
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.cnss_social_share_icon ul {
+    margin: 0;
+    padding: 0;
+    font-size:0;
+}
+.cnss_social_share_icon ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 2px;
+    margin:0px;
+}
+#bef_aft_post, #bef_aft_page {
+    padding-left:50px;
+    display:none;
+}

@@ -1,0 +1,201 @@
+/** Shopify CDN: Minification failed
+
+Line 128:5 Unexpected "/"
+Line 129:1 Expected identifier but found "%"
+Line 130:63 Unexpected "/"
+Line 131:1 Expected identifier but found "%"
+Line 132:0 Unexpected "{"
+Line 132:1 Expected identifier but found "%"
+Line 133:0 Unexpected "{"
+Line 133:1 Expected identifier but found "%"
+Line 134:0 Unexpected "{"
+Line 134:1 Expected identifier but found "%"
+... and 16 more hidden warnings
+
+**/
+
+/* Place any CSS overrides in this file. */
+/*table custom*/
+
+  .outer{
+    width: 100%;
+    position: relative;
+    
+
+  }
+  .grid-boxes img{
+    width: 320px;
+  }
+  .grid-boxes{
+    width: 33%;
+    position: relative;
+    margin-top: 30px;
+    display: inline-block;
+    
+  }
+   .brandblock{
+    width: 19%!important;
+       
+  }
+.brandblock img{
+    height: 160px!important;
+      width: auto!important;
+  }
+
+  .grid-boxes img{
+    display: table;
+    margin: 0 auto;
+  }
+ @media (max-width: 1200px) {
+    .grid-boxes{
+    width: 32%;
+  }
+    
+}
+
+ @media (max-width: 767px) {  
+  .grid-boxes{
+    width: 49%!important;
+  }
+  .grid-boxes img{
+    height: 220px!important;
+  }
+  
+.brandblock img{
+    height: 160px!important;
+      width: auto!important;
+  }   
+}
+
+ @media (max-width: 540px) {
+    .grid-boxes{
+    width: 100%;
+
+  }
+  .grid-boxes img{
+    height: 130px;
+  }
+    
+    
+} 
+
+@media (max-width: 340px) {
+    .grid-boxes{
+    width: 100%;
+
+  }
+  .grid-boxes img{
+    height: 80px;
+  }
+    
+    
+}
+
+/*end*/
+
+
+/* custome for product page */
+.template-product #AddToCart{
+display:block !important;
+}
+
+@font-face { font-family: 'Arial'; 
+src: url('{{ 'Arial.eot?' | asset_url }}'); 
+src: url('{{ 'Arial.eot??#iefix' | asset_url }}') format('embedded-opentype'), 
+url('{{ 'Arial.woff' | asset_url }}') format('woff'), 
+url('{{ 'Arial.ttf' | asset_url }}') format('truetype'),
+url('{{ 'Arial.woff2' | asset_url }}') format('woff2'); 
+font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: antialiased; }
+    li{
+    font-family:'Arial'!important;
+  }
+
+@media only screen and (min-width: 700px) { 
+
+.stockify-content {
+    width: 70% !IMPORTANT;
+    margin-left: -63px !IMPORTANT;
+}}
+
+button.stockify-btn.stockify-submit {
+  font-family: 'Poppins' !IMPORTANT;
+    border-radius: 33px !IMPORTANT;
+    line-height: 2 !IMPORTANT;
+    font-size: 12px !important;
+    font-weight: 100 !IMPORTANT;
+  letter-spacing: 1px !IMPORTANT;
+}
+<!-- /templates/collection.liquid -->
+{% comment %}
+The contents of the collection.liquid template can be found in /sections/collection-template.liquid
+{% endcomment %}
+{% if collection.image %}
+{% include 'responsive-image' with collection.image, alt: collection.title %}
+{% endif %}
+
+<div class="container-collection">
+  <div class="collection__title">{{ collection.title }}</div>
+  {% include 'searchanise-navigation' %}
+</div>
+<script>
+ window.onload = function onloadFunction() { 
+  console.log('The Script will load now.');          
+  var elements = document.getElementsByClassName("snize-button");
+   var cartItemCounter = document.querySelector('.cart-item-count-header .money');
+  var myFunction = function() {
+   //add ur code here
+    setTimeout(function(){  window.wetheme.$.getJSON('/cart.js', function(cart) {
+   // now have access to Shopify cart object
+var cartTotal = cart.total_price/100 + ".00";
+   cartItemCounter.innerText = cartTotal;
+} ); },1000)
+  };
+   for (var i = 0; i < elements.length; i++) {
+    	elements[i].addEventListener('click', myFunction, false);
+	}
+
+  }
+
+
+</script>
+/* Make all product cards equal height */
+.grid-view-item {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Keep title height fixed to 2 lines */
+.product-grid--title {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 48px; /* ensure equal space */
+    margin-bottom: 8px;
+}
+
+/* Push the price + button to bottom */
+.grid-view-item-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Ensure price stays above the button */
+.product-grid--price {
+    margin-bot
+
+div.sale-badge.badge,
+.sale-badge.badge,
+.sale-badge,
+.badge.sale-badge {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
