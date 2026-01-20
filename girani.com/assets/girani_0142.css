@@ -1,0 +1,33 @@
+.nav1{
+    background-color: #593825;
+    color: white;
+    display: flex;
+   }
+
+.nav2{
+    background-color: #EFE6DD;
+    height: 80px;
+    color: #593825;
+    display: flex;  
+}
+.menu1{
+    background-color: #593825;
+    color: white;
+    /* display:flex; */
+    /* padding-top: 5px; */
+}
+.menu2{
+    background-color: #9C3C1A;
+    height: 300px;
+    color: #EFE6DD
+}
+.start
+{
+    border-radius: 20px;
+}
+.basket{
+    background-color: #985F3F;
+    width: 30px;
+    height: 30px;
+}
+

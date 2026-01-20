@@ -1,0 +1,30 @@
+.footer-widget .footer-link { padding-left: 0px; }
+.footer-widget .footer-link li { border-bottom: 1px solid rgba(214, 214, 214, 0.1); transition: 0.4s; }
+.footer-widget .footer-link li:first-child a { padding-top: 0px; }
+.footer-widget .footer-link li:hover a { padding-left: 8px; color: rgb(255, 255, 255); }
+.footer-widget .footer-link li a { font-size: 13px; color: rgb(204, 204, 204); display: block; transition: 0.4s; padding-top: 13px; padding-bottom: 13px; line-height: 14px; font-weight: 600; }
+.footer-widget .footer-link li span { padding-right: 5px; font-size: 10px; }
+.row-contact { background: rgb(249, 249, 249); margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px; border: 1px solid rgb(221, 221, 221); position: relative; border-radius: 80px; }
+.row-contact .no-padding { border-right: 1px solid rgb(221, 221, 221); }
+.row-contact .no-padding:last-child { border-right: none; }
+.row-contact .single-item { position: relative; padding-left: 60px; margin-bottom: 20px; margin-left: 20px; margin-top: 20px; }
+.row-contact .single-item span { left: 0px; top: 0px; color: rgb(204, 51, 51); position: absolute; font-size: 30px; }
+.row-contact .single-item span::before { margin: 0px; font-size: 35px; line-height: 35px; }
+.row-contact .single-item p { font-size: 14px; color: rgb(2, 24, 90); line-height: 15px; margin-bottom: 10px; font-family: Roboto, sans-serif; font-weight: 600; padding-top: 8px; }
+.dropbtn { color: rgb(42, 67, 93); padding: 12px; font-size: 16px; border-top: none; border-right: none; border-left: none; border-image: initial; cursor: pointer; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropbtn-1 { color: rgb(42, 67, 93); padding: 12px; font-size: 16px; border-top: none; border-right: none; border-left: none; border-image: initial; cursor: pointer; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropbtn-2 { color: rgb(42, 67, 93); padding: 12px; font-size: 16px; border-top: none; border-right: none; border-left: none; border-image: initial; cursor: pointer; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropbtn-3 { color: rgb(42, 67, 93); padding: 12px; font-size: 16px; border-top: none; border-right: none; border-left: none; border-image: initial; cursor: pointer; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropdown-1 { position: relative; display: inline-block; width: 100%; }
+.dropdown-2 { position: relative; display: inline-block; width: 100%; }
+.dropdown-content { display: none; position: absolute; background-color: rgb(255, 255, 255); min-width: 100%; overflow: auto; z-index: 1; height: 600px; }
+.dropdown-content a { color: rgb(42, 67, 93); padding: 12px 16px; text-decoration: none; display: block; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropdown-content-1 { display: none; position: absolute; background-color: rgb(255, 255, 255); min-width: 100%; overflow: auto; z-index: 1; height: 400px; }
+.dropdown-content-1 a { color: rgb(42, 67, 93); padding: 12px 16px; text-decoration: none; display: block; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropdown-content-2 { display: none; position: absolute; background-color: rgb(255, 255, 255); min-width: 100%; overflow: auto; z-index: 1; height: 600px; }
+.dropdown-content-2 a { color: rgb(42, 67, 93); padding: 12px 16px; text-decoration: none; display: block; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropdown-content-3 { display: none; position: absolute; background-color: rgb(255, 255, 255); min-width: 100%; overflow: auto; z-index: 1; height: 400px; }
+.dropdown-content-3 a { color: rgb(42, 67, 93); padding: 12px 16px; text-decoration: none; display: block; border-bottom: 1px solid rgb(204, 204, 204); }
+.dropdown-1 a:hover { background-color: rgb(221, 221, 221); }
+.show { display: block; }
+.show-1 { display: block; }

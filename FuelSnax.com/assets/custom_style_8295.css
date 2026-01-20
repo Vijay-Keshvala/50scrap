@@ -1,0 +1,222 @@
+@media (min-width: 992px){
+	.col-md-custom-2 {
+		width: 16.66666667%;
+	}
+}
+.rp-60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+/* .navbar-brand-custom {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+} */
+.industry-title {
+	margin: 0;
+	font-size: 26px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.industry-desc {
+	margin: 0;
+	font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #fff;
+    letter-spacing: .40px;
+}
+.dark-foo-line {
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.industry-col {
+	display: inline-block;
+	width: 97.5%;
+    margin: 0 1.25%;
+	background-color: rgba(255,255,255,1);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.industry-box {
+	/* display: block;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 120px; */
+    display: block;
+    padding: 10px 10px;
+ /*   background-color: #d42427;*/
+     border-radius: 5px; 
+       color: #22202e;
+    height: auto;
+    border-style: dotted;
+    border-radius: 30px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+}
+.industry-box:hover{ background: #d42427; color: #fff; cursor: pointer; }
+.industries-icon img {
+	max-width: 60px;
+}
+.icon-text {
+	font-size: 16px;
+  
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+/*    opacity: .8;*/
+    letter-spacing: .32px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.mb-15{
+	margin-bottom: 15px;
+}
+.specialities-title {
+	margin: 0;
+    font-size: 22px;
+    color: #e41e24;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.gallery-owl-carousel1 .owl-stage-outer {
+/*overflow: visible;*/}
+.speciality-box {
+	display: block;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.7);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: 90px;
+	text-align: center;
+	min-height: 180px;
+}
+.speciality-box img:first-child {
+	margin-top: -80px;
+	width: 150px !important;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+.speciality-box img {
+	width: 20px !important;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.speciality-box h4 {
+	margin: 0;
+	font-size: 18px;
+	color: #3e3e3e;
+	line-height: 20px;
+	font-weight: 600;
+}
+.steel-title {
+	margin: 0;
+	font-size: 27px;
+    font-weight: 600;
+    margin-top: 0;
+    color: #3e3e3e;
+    text-transform: uppercase;
+	text-align: right;
+	line-height: 40px;
+    border-right: 3px solid #e41e24;
+    padding-right: 25px;
+    min-height: 122px;
+}
+.steel-title span {
+	display: block;
+	font-size:18px;
+	font-weight: 500;
+	margin-top: 10px;
+	line-height: 24px;
+	color: #ffa102;
+	font-family: poppins;
+}
+.about-title {
+	font-size: 22px;
+    font-weight: 800;
+    margin-top: 5px;
+    color: #e41e24;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-desc {
+	margin: 0;
+	width: 95%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #676767;
+    margin-top: 20px;
+}
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 2000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+}
+
+.tuv-popup {
+	display: inline-block;
+}
+
+/*Investor Styles*/
+.investor-box {
+ 	display: block;
+ 	position: relative;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    min-height: 150px;
+    background-color: #0069d2;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-size: 14px;
+}
+.investor-box:hover, .investor-box:focus {
+	background-color: #00274c;
+	color: #ffffff;
+}
+.read-more-yellow {
+	background-color: #ffb332 !important;
+}
+.investor-yellow-btn {
+    padding: 5px 25px;
+    margin-top:15px;
+}
+.investor-controls {
+	position: absolute;
+	bottom: 30px;
+	left: 25px;
+	right: 25px;
+}
+.investor-controls i {
+	float: right;margin-top: 25px;
+}
+.modal-custom .modal-body {
+	max-height: 400px;
+    overflow-y: auto;
+}
+/*Investor Styles*/

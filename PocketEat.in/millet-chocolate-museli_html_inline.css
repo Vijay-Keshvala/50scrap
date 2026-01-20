@@ -1,0 +1,31 @@
+.footer-widget .footer-link { padding-left: 0px; }
+.footer-widget .footer-link li { border-bottom: 1px solid rgba(214, 214, 214, 0.1); transition: 0.4s; }
+.footer-widget .footer-link li:first-child a { padding-top: 0px; }
+.footer-widget .footer-link li:hover a { padding-left: 8px; color: rgb(255, 255, 255); }
+.footer-widget .footer-link li a { font-size: 13px; color: rgb(204, 204, 204); display: block; transition: 0.4s; padding-top: 13px; padding-bottom: 13px; line-height: 14px; font-weight: 600; }
+.footer-widget .footer-link li span { padding-right: 5px; font-size: 10px; }
+.row-contact { background: rgb(249, 249, 249); margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px; border: 1px solid rgb(221, 221, 221); position: relative; border-radius: 80px; }
+.row-contact .no-padding { border-right: 1px solid rgb(221, 221, 221); }
+.row-contact .no-padding:last-child { border-right: none; }
+.row-contact .single-item { position: relative; padding-left: 60px; margin-bottom: 20px; margin-left: 20px; margin-top: 20px; }
+.row-contact .single-item span { left: 0px; top: 0px; color: rgb(204, 51, 51); position: absolute; font-size: 30px; }
+.row-contact .single-item span::before { margin: 0px; font-size: 35px; line-height: 35px; }
+.row-contact .single-item p { font-size: 14px; color: rgb(2, 24, 90); line-height: 15px; margin-bottom: 10px; font-family: Roboto, sans-serif; font-weight: 600; padding-top: 8px; }
+.page-enquiry-data-1 { padding: 85px 0px 80px; background-color: rgb(251, 251, 251); background-image: url("img/contact.png"); background-size: contain; }
+.page-enquiry-data-2 { margin: 0px 100px; }
+.page-enquiry-data-3 { text-align: center; }
+.page-enquiry-data-3 h6 { color: rgb(34, 34, 34); font-size: 18px; font-weight: 700; letter-spacing: 0.2px; margin-bottom: 8px; padding-left: 40px; display: inline-block; }
+.page-enquiry-data-3 h6::before { content: ""; width: 39px; height: 3px; position: absolute; top: 10%; left: 420px; background-color: rgb(237, 50, 56); transform: translate(0px, -50%); }
+.page-enquiry-data-3 h3 { color: rgb(34, 34, 34); font-size: 36px; line-height: 50px; font-weight: 800; margin-bottom: 37px; text-transform: uppercase; }
+.page-enquiry-data-3 h3 span { color: rgb(204, 51, 51); }
+.page-enquiry-data-4 p { background-color: rgb(255, 255, 255); font-size: 15px; line-height: 24px; border-left: 4px solid rgb(169, 80, 23); padding: 15px; border-radius: 8px; margin-top: 25px; margin-bottom: 30px; box-shadow: rgba(0, 0, 0, 0.14) 0px 10px 30px 0px; }
+.page-enquiry-data-5 { background-color: rgb(255, 255, 255); padding: 50px; box-shadow: rgba(0, 0, 0, 0.14) 0px 10px 30px 0px; border-radius: 8px; border-top: 4px solid rgb(204, 51, 51); }
+.page-enquiry-data-5 h4 { font-size: 25px; text-align: center; font-weight: 500; margin-top: -25px; border-bottom: 1px solid rgb(247, 247, 247); padding-bottom: 18px; margin-bottom: 25px; color: rgb(0, 0, 0); }
+.page-enquiry-data-5 .form-group { margin-bottom: 12px; }
+.page-enquiry-data-5 .form-group label { font-size: 14px; text-transform: uppercase; font-weight: 600; margin-bottom: 0px; color: rgb(34, 34, 34); }
+.contact-us-data-3 .form-group input { width: 100%; height: 54px; padding-top: 3px; padding-left: 20px; border: 1px solid rgb(167, 167, 169); border-radius: 2px; background-color: transparent; margin-top: 9px; }
+element.style { }
+.page-enquiry-data-5 .form-group textarea { color: rgb(0, 0, 0); }
+.contact-us-data-3 .form-group textarea { width: 100%; padding-top: 20px; padding-left: 20px; border: 1px solid rgb(167, 167, 169); border-radius: 2px; background-color: transparent; }
+.contact-us-data-3 button { background-color: rgb(204, 51, 51); border: none; color: rgb(255, 255, 255); padding: 20px 50px 14px; border-radius: 3px; text-transform: uppercase; font-size: 14px; font-weight: 600; margin-top: 15px; }
+::placeholder { color: rgb(159, 0, 0); opacity: 1; }

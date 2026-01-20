@@ -1,0 +1,115 @@
+@-webkit-keyframes chartjs-render-animation { 
+  0% { opacity: 0.99; }
+  100% { opacity: 1; }
+}
+@keyframes chartjs-render-animation { 
+  0% { opacity: 0.99; }
+  100% { opacity: 1; }
+}
+.chartjs-render-monitor { animation: 0.001s ease 0s 1 normal none running chartjs-render-animation; }
+* { box-sizing: border-box; }
+body { margin: 0px; font-family: "segoe ui"; }
+.nav { width: 100%; background-color: rgb(77, 77, 77); position: relative; height: 50px !important; }
+.nav > .nav-header { display: inline; }
+.navbar { position: absolute !important; }
+.nav > .nav-header > .nav-title { display: inline-block; font-size: 22px; color: rgb(0, 0, 0); padding: 10px; }
+.nav > .nav-btn { display: none; }
+.nav-links { display: none; }
+.nav > #nav-check { display: none; }
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
+  .nav { height: 100px !important; padding: 10px !important; }
+  .navtopbar { display: none !important; }
+  .logo { position: absolute; left: 50%; padding: 1px; font-size: 2.5rem; margin-top: -5px; }
+  .userdetails { color: transparent !important; }
+  .nav > .nav-btn { display: inline-block; position: absolute; right: 0px; top: 0px; }
+  .nav > .nav-btn > label { display: inline-block; width: 50px; height: 50px; padding: 13px; background-color: rgb(89, 56, 37); margin-top: 20px; }
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label { background-color: rgb(89, 56, 37); margin-right: 10px; }
+  .nav > .nav-btn > label > span { display: block; width: 25px; height: 10px; border-top: 2px solid rgb(238, 238, 238); }
+  .nav > .nav-links { position: absolute; display: block; width: 100%; background-color: rgb(89, 56, 37); height: 0px; transition: 0.3s ease-in; overflow-y: hidden; top: 97px; right: 0px; color: rgb(255, 255, 255); line-height: 40px !important; padding-left: 25px !important; }
+  .nav > .nav-links > a { display: block; width: 100%; color: white !important; }
+  .nav > #nav-check:not(:checked) ~ .nav-links { height: 0px; }
+  .nav > #nav-check:checked ~ .nav-links { height: calc(-50px + 88vh); overflow-y: auto; }
+  .logo { position: absolute; left: 50%; padding: 1px; font-size: 2.5rem; margin-top: -5px; }
+  .nav-dropdown { position: static; }
+  .navbar-links { display: none !important; }
+}
+@media only screen and (min-width: 1001px) and (max-width: 2500px) {
+  .nav { height: 100px !important; }
+  .navtopbar1 { display: none !important; }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1161px) {
+  .navbar-links li.navbar-dropdown { position: relative; font-size: 17px !important; }
+}
+.logo { order: 1; font-size: 2.3rem; position: absolute; left: 0px; top: -15px; padding: 15px; }
+.basket { width: 40px; height: 45px; border-radius: 5px; padding: 5px; margin-top: -10px; }
+.nav { height: 15%; }
+.nav-dropdown { position: absolute; display: none; z-index: 1; box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px; }
+.navbar-links { list-style-type: none; display: flex; margin-left: 275px; }
+.navbar-links li a { display: block; text-decoration: none; color: rgb(68, 68, 68); padding: 25px 15px; font-weight: 500; transition: 0.4s; }
+.navbar-links li.navbar-dropdown { position: relative; font-size: 20px; }
+.navbar-links li.navbar-dropdown:hover .dropdown { visibility: visible; opacity: 1; transform: translateY(0px); }
+.navbar-links li.navbar-dropdown .dropdown { visibility: hidden; opacity: 0; position: absolute; padding: 20px 0px; top: 100%; transform: translateY(50px); left: 0px; width: 250px; background-color: rgb(239, 230, 221); box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px 3px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; z-index: 111; transition: 0.4s; }
+.navbar-links li.navbar-dropdown .dropdown a { padding-top: 10px; padding-bottom: 10px; font-weight: 400; }
+.listdata:hover { background-color: white; }
+#drop1:hover { background-color: white; }
+.blog:hover { background-color: white; }
+.recipe:hover { background-color: white; }
+#drop2:hover { background-color: white; }
+.blink { animation: 1s step-end 0s infinite normal none running blinker; }
+a { text-decoration: none; color: unset; }
+a { outline: none; }
+@media only screen and (min-width: 1200px) {
+  .freeship { right: 25%; }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1199px) {
+  .freeship { right: 15%; }
+}
+.pseudo-class-demo:hover { background-color: rgb(89, 56, 37); color: white; border-radius: 20px; }
+.discover { color: rgb(152, 95, 63); transition: 0.4s; }
+.discover:hover { transition: 0.4s; color: rgb(255, 255, 255); }
+.page-header { text-align: center; font-size: 0.8em; font-weight: normal; margin: 30px 0px; }
+#pagination { margin: 0px; padding: 0px; text-align: center; }
+#pagination li { display: inline; }
+#pagination li a { display: inline-block; text-decoration: none; padding: 5px 10px; color: rgb(0, 0, 0); }
+#pagination li a { border-radius: 5px; transition: background-color 0.3s; }
+#pagination li a.active { background-color: rgb(89, 56, 37); color: rgb(255, 255, 255); }
+#pagination li a:hover:not(.active) { background-color: rgb(221, 221, 221); }
+.row { margin-left: 0px !important; margin-right: 0px !important; }
+.userdetails { padding-left: 30px; }
+@media (max-width: 500px) {
+  .countclass { width: 35% !important; }
+  .countcard { width: 80% !important; }
+  .buttonclass { width: 30%; margin-right: -24px; }
+  .desk { display: none; }
+}
+@media (max-width: 768px) {
+  .countclass { width: 35% !important; }
+  .countcard { width: 80% !important; }
+  .buttonclass { width: 30%; margin-right: -24px; }
+  .desk { display: none; }
+}
+@media (max-width: 400px) {
+  .countclass { width: 35% !important; }
+  .countcard { width: 80% !important; }
+  .buttonclass { width: 30%; margin-right: -24px; }
+  .desk { display: none; }
+  .mb-3 { margin-left: 90px !important; }
+}
+@media (min-width: 394px) {
+  .mb-3 { margin-left: 53px !important; }
+}
+@media (min-width: 700px) {
+  .searchmob { display: none; }
+}
+.footer-top { background-color: rgb(89, 56, 37); padding-top: 35px; }
+#footer { background-color: rgb(89, 56, 37); padding-bottom: 35px; }
+a, a label { cursor: pointer; }
+a { color: white; }
+.float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: rgb(156, 60, 26); color: rgb(255, 255, 255); border-radius: 50px; text-align: center; font-size: 30px; box-shadow: rgb(153, 153, 153) 2px 2px 3px; z-index: 100; }
+.my-float { margin-top: 15px; margin-left: 3px; color: rgb(255, 255, 255); }
+a img { border: none; outline: none; }
+a { text-decoration: none; border: none; }
+@media (max-width: 500px) {
+  .stores { margin: 10px; }
+}
+.stores { height: 50px; object-fit: cover; border: none; outline: none; border-radius: 15px; }
